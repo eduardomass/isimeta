@@ -33,8 +33,8 @@ const year = new Date().getFullYear()
             <AppIcon name="tooth" :size="22" />
           </span>
           <span>
-            <strong>Dr. {{ site.doctor.fullName }}</strong>
-            <span class="footer__credential">{{ site.doctor.credential }}</span>
+            <strong><bdi>Dr. {{ site.doctor.fullName }}</bdi></strong>
+            <span class="footer__credential"><bdi>{{ site.doctor.credential }}</bdi></span>
           </span>
         </a>
         <p class="footer__tagline">{{ t('footer.tagline') }}</p>
@@ -61,17 +61,17 @@ const year = new Date().getFullYear()
         <h2 class="footer__col-title">{{ t('footer.contactTitle') }}</h2>
         <ul class="footer__list">
           <li>
-            <a class="footer__link" :href="site.whatsapp.link" target="_blank" rel="noopener noreferrer" dir="ltr">
-              {{ site.whatsapp.display }}
+            <a class="footer__link" :href="site.whatsapp.link" target="_blank" rel="noopener noreferrer">
+              <bdi>{{ site.whatsapp.display }}</bdi>
             </a>
           </li>
           <li>
-            <a class="footer__link" :href="site.email.link">{{ site.email.address }}</a>
+            <a class="footer__link" :href="site.email.link"><bdi>{{ site.email.address }}</bdi></a>
           </li>
           <li>
             <address class="footer__address">
-              {{ site.address.street }}<br />
-              {{ site.address.city }}, {{ site.address.country }}
+              <bdi>{{ site.address.street }}</bdi><br />
+              <bdi>{{ site.address.city }}, {{ site.address.country }}</bdi>
             </address>
           </li>
         </ul>
@@ -89,7 +89,7 @@ const year = new Date().getFullYear()
     </div>
 
     <div class="container footer__bottom">
-      <p>&copy; {{ year }} Dr. {{ site.doctor.fullName }}. {{ t('footer.rights') }}</p>
+      <p><bdi>&copy; {{ year }} Dr. {{ site.doctor.fullName }}</bdi>. {{ t('footer.rights') }}</p>
       <p class="footer__licence">{{ t('footer.licence') }}</p>
     </div>
   </footer>

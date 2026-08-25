@@ -28,12 +28,12 @@ const initials = site.doctor.fullName
           block for an <img> with width/height set once a real photo exists.
         -->
         <div class="about__avatar" role="img" :aria-label="t('about.portraitAlt')">
-          <span class="about__initials" aria-hidden="true">{{ initials }}</span>
+          <span class="about__initials" aria-hidden="true"><bdi>{{ initials }}</bdi></span>
         </div>
 
         <div class="about__badge">
           <AppIcon name="award" :size="18" class="about__badge-icon" />
-          <span>{{ site.doctor.credential }}</span>
+          <span><bdi>{{ site.doctor.credential }}</bdi></span>
         </div>
       </div>
 

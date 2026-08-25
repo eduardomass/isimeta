@@ -62,8 +62,8 @@ onBeforeUnmount(() => {
           <AppIcon name="tooth" :size="22" />
         </span>
         <span class="brand__text">
-          <span class="brand__name">Dr. {{ site.doctor.fullName }}</span>
-          <span class="brand__credential">{{ site.doctor.credential }}</span>
+          <span class="brand__name"><bdi>Dr. {{ site.doctor.fullName }}</bdi></span>
+          <span class="brand__credential"><bdi>{{ site.doctor.credential }}</bdi></span>
         </span>
       </a>
 

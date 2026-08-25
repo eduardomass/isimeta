@@ -15,7 +15,8 @@ const STAT_KEYS = ['years', 'patients', 'rating', 'implants']
       <dl class="trust__stats reveal">
         <div v-for="key in STAT_KEYS" :key="key" class="trust__stat">
           <dt class="trust__stat-label">{{ t(`trust.stats.${key}.label`) }}</dt>
-          <dd class="trust__stat-value">{{ t(`trust.stats.${key}.value`) }}</dd>
+          <!-- bdi isolates the figure: bare "18+" renders as "+18" in an RTL paragraph. -->
+          <dd class="trust__stat-value"><bdi>{{ t(`trust.stats.${key}.value`) }}</bdi></dd>
         </div>
       </dl>
 

@@ -51,7 +51,7 @@ const bookUrl = computed(() => whatsappUrl(t('contact.whatsapp.prefill')))
           <span class="hero__card-mark" aria-hidden="true">
             <AppIcon name="tooth" :size="34" />
           </span>
-          <p class="hero__card-title">{{ t('trust.stats.rating.value') }}</p>
+          <p class="hero__card-title"><bdi>{{ t('trust.stats.rating.value') }}</bdi></p>
           <p class="hero__card-label">{{ t('trust.stats.rating.label') }}</p>
           <div class="hero__stars" aria-hidden="true">
             <AppIcon v-for="n in 5" :key="n" name="star" :size="16" class="hero__star" />
@@ -59,12 +59,12 @@ const bookUrl = computed(() => whatsappUrl(t('contact.whatsapp.prefill')))
         </div>
 
         <div class="hero__chip hero__chip--years">
-          <strong>{{ t('trust.stats.years.value') }}</strong>
+          <strong><bdi>{{ t('trust.stats.years.value') }}</bdi></strong>
           <span>{{ t('trust.stats.years.label') }}</span>
         </div>
 
         <div class="hero__chip hero__chip--patients">
-          <strong>{{ t('trust.stats.patients.value') }}</strong>
+          <strong><bdi>{{ t('trust.stats.patients.value') }}</bdi></strong>
           <span>{{ t('trust.stats.patients.label') }}</span>
         </div>
       </div>

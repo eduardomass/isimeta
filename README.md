@@ -74,6 +74,51 @@ node -e "const a=require('./src/i18n/locales/en.json'),b=require('./src/i18n/loc
 Literal `@` in a message must be escaped as `{'@'}` — vue-i18n reads a bare `@`
 as a linked-message token.
 
+### Bidi isolation (required for Hebrew)
+
+Mirroring the layout is not enough. Inside `dir="rtl"`, the Unicode Bidirectional
+Algorithm reorders runs of Latin text and digits that are not isolated, because
+the characters separating them (space, hyphen, `+`, `.`) are direction-neutral
+and inherit the paragraph's RTL direction:
+
+| Stored | Rendered in Hebrew, unisolated |
+| --- | --- |
+| `9:00 - 19:00` | `19:00 - 9:00` |
+| `18+` | `+18` |
+| `+54 9 11 5555-555` | `5555-555 11 9 54+` |
+| `© 2026 Dr. Isaac Fernando Meta.` | `.Dr. Isaac Fernando Meta 2026 ©` |
+
+So **wrap every untranslated value in `<bdi>`** — phone numbers, times, stat
+figures, addresses, the doctor's Latin name, the copyright line.
+
+Use `<bdi>` rather than `dir="ltr"`. `<bdi>` defaults to `dir="auto"`, so it
+resolves per value: a time range stays LTR, but if `contact.hours.sundayValue`
+("Emergencies only") is translated to Hebrew, the same markup renders it RTL.
+Hardcoding `dir="ltr"` would break that. `<bdi>` is inline, so the block's own
+`text-align: start` still mirrors normally.
+
+Only three locale strings currently reorder — the two hour ranges and `18+` —
+but the audit is worth rerunning after editing locales or `src/data/site.js`:
+
+```bash
+pip install python-bidi
+python -c "
+import json,unicodedata
+from bidi import get_display
+he=json.load(open('src/i18n/locales/he.json',encoding='utf-8'))
+def w(o,p=''):
+    if isinstance(o,str): yield p,o
+    elif isinstance(o,dict):
+        for k,v in o.items(): yield from w(v,f'{p}.{k}' if p else k)
+    elif isinstance(o,list):
+        for i,v in enumerate(o): yield from w(v,f'{p}[{i}]')
+for p,s in w(he):
+    if not any(unicodedata.bidirectional(c) in ('R','AL') for c in s):
+        v=get_display(s,base_dir='R')
+        if v!=s: print('REORDERS',p,repr(s),'->',repr(v))
+"
+```
+
 ## Accessibility
 
 Built against WCAG 2.2 AA:

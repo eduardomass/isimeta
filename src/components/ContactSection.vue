@@ -81,7 +81,7 @@ const CONTACT_ROWS = [
             </span>
             <span class="contact__whatsapp-body">
               <span class="contact__whatsapp-label">{{ t('contact.whatsapp.label') }}</span>
-              <strong class="contact__whatsapp-number" dir="ltr">{{ site.whatsapp.display }}</strong>
+              <strong class="contact__whatsapp-number"><bdi>{{ site.whatsapp.display }}</bdi></strong>
               <span class="contact__whatsapp-cta">{{ t('contact.whatsapp.cta') }}</span>
             </span>
             <span class="contact__whatsapp-note">{{ t('contact.whatsapp.note') }}</span>
@@ -95,7 +95,7 @@ const CONTACT_ROWS = [
               </span>
               <span class="contact__row-body">
                 <span class="contact__row-label">{{ t(`contact.${row.key}.label`) }}</span>
-                <a :href="row.href" class="contact__row-value" dir="ltr">{{ row.value }}</a>
+                <a :href="row.href" class="contact__row-value"><bdi>{{ row.value }}</bdi></a>
               </span>
             </li>
 
@@ -106,8 +106,8 @@ const CONTACT_ROWS = [
               <span class="contact__row-body">
                 <span class="contact__row-label">{{ t('contact.address.label') }}</span>
                 <address class="contact__address">
-                  {{ site.address.street }}<br />
-                  {{ site.address.city }}, {{ site.address.country }}
+                  <bdi>{{ site.address.street }}</bdi><br />
+                  <bdi>{{ site.address.city }}, {{ site.address.country }}</bdi>
                 </address>
                 <a
                   class="contact__directions"
@@ -131,7 +131,7 @@ const CONTACT_ROWS = [
             <dl class="contact__hours-list">
               <div v-for="day in ['weekdays', 'saturday', 'sunday']" :key="day" class="contact__hours-row">
                 <dt>{{ t(`contact.hours.${day}`) }}</dt>
-                <dd>{{ t(`contact.hours.${day}Value`) }}</dd>
+                <dd><bdi>{{ t(`contact.hours.${day}Value`) }}</bdi></dd>
               </div>
             </dl>
           </div>
