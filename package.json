@@ -1,0 +1,20 @@
+{
+  "name": "isimeta",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Website for Dr. Isaac Fernando Meta, DDS - trilingual (EN/ES/HE)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.11"
+  }
+}

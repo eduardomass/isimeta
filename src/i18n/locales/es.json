@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "title": "Dr. Isaac Fernando Meta, Odontólogo — Odontología moderna",
+    "description": "Odontología moderna y sin dolor en Buenos Aires. Implantes, ortodoncia, estética dental y prevención con el Dr. Isaac Fernando Meta."
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido principal",
+    "mainNav": "Navegación principal",
+    "languageSwitcher": "Cambiar idioma",
+    "currentLanguage": "Idioma actual",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "previousTestimonial": "Testimonio anterior",
+    "nextTestimonial": "Testimonio siguiente",
+    "pauseTestimonials": "Pausar la rotación de testimonios",
+    "playTestimonials": "Reanudar la rotación de testimonios",
+    "slidePosition": "Testimonio {current} de {total}",
+    "whatsappNew": "Abre WhatsApp en una pestaña nueva",
+    "externalLink": "Se abre en una pestaña nueva"
+  },
+  "nav": {
+    "services": "Tratamientos",
+    "about": "Sobre el Dr.",
+    "process": "Tu visita",
+    "testimonials": "Opiniones",
+    "faq": "Preguntas",
+    "contact": "Contacto",
+    "book": "Pedir turno"
+  },
+  "hero": {
+    "badge": "Recibimos pacientes nuevos",
+    "title": "Odontología tranquila, cuidadosa y pensada para vos",
+    "subtitle": "El Dr. Isaac Fernando Meta y su equipo combinan 18 años de experiencia clínica con técnicas modernas de mínimo dolor, para que venir al dentista deje de ser un problema.",
+    "ctaPrimary": "Pedir turno por WhatsApp",
+    "ctaSecondary": "Ver tratamientos",
+    "reassurance": "Turnos en la misma semana · Urgencias todos los días",
+    "imageAlt": "El Dr. Isaac Fernando Meta en su consultorio"
+  },
+  "trust": {
+    "title": "Atención que se puede medir",
+    "stats": {
+      "years": { "value": "18+", "label": "Años de práctica" },
+      "patients": { "value": "6.400", "label": "Pacientes atendidos" },
+      "rating": { "value": "4,9/5", "label": "Valoración promedio" },
+      "implants": { "value": "1.200", "label": "Implantes colocados" }
+    },
+    "credentials": {
+      "title": "Formación y matrículas",
+      "items": [
+        "Odontólogo — Universidad de Buenos Aires, Facultad de Odontología",
+        "Implantólogo certificado, Sociedad Argentina de Implantología",
+        "Posgrado en Ortodoncia y Ortopedia Dentofacial",
+        "Miembro de la Asociación Odontológica Argentina"
+      ]
+    }
+  },
+  "services": {
+    "eyebrow": "Tratamientos",
+    "title": "Todo lo que tu sonrisa necesita, en un solo lugar",
+    "lead": "Desde una limpieza de rutina hasta una rehabilitación completa, todo el tratamiento se planifica en un mismo lugar, sin derivaciones entre clínicas.",
+    "items": {
+      "preventive": {
+        "title": "Prevención",
+        "description": "Limpiezas, selladores, flúor y controles de detección temprana para frenar los problemas antes de que empiecen.",
+        "detail": "Turno de 45 minutos"
+      },
+      "cosmetic": {
+        "title": "Estética dental",
+        "description": "Blanqueamiento, carillas de porcelana y composite diseñados según tu cara, no según una plantilla.",
+        "detail": "Vista previa digital"
+      },
+      "implants": {
+        "title": "Implantes dentales",
+        "description": "Cirugía de implantes guiada con planificación 3D para una mordida natural y un resultado permanente.",
+        "detail": "Planificación 3D"
+      },
+      "orthodontics": {
+        "title": "Ortodoncia",
+        "description": "Alineadores transparentes y brackets modernos de bajo perfil para adolescentes y adultos, con avances visibles.",
+        "detail": "Alineadores o brackets"
+      },
+      "endodontics": {
+        "title": "Endodoncia",
+        "description": "Tratamiento de conducto asistido por microscopio que salva el diente natural, en general en una sola sesión cómoda.",
+        "detail": "Suele ser una sesión"
+      },
+      "emergency": {
+        "title": "Urgencias",
+        "description": "Diente roto, una restauración que se salió o dolor repentino: guardamos turnos libres todos los días.",
+        "detail": "Atención en el día"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Sobre el Dr. Meta",
+    "title": "Un dentista para quienes preferirían estar en cualquier otro lado",
+    "paragraphs": [
+      "El Dr. Isaac Fernando Meta lleva 18 años construyendo un consultorio alrededor de una idea: el miedo al dentista no es un problema que deba resolver el paciente, sino el odontólogo.",
+      "Eso define todo acá: turnos sin apuro, explicaciones claras antes de que pase cualquier cosa y técnicas de anestesia modernas que reducen la molestia al mínimo real.",
+      "Se formó en la Universidad de Buenos Aires y desde entonces completó certificaciones avanzadas en implantología y ortodoncia, con formación continua cada año en odontología digital y manejo del dolor."
+    ],
+    "values": {
+      "honest": {
+        "title": "Planes honestos",
+        "description": "Recibís todas las opciones con precios reales, incluida la opción de esperar. Acá no se vende nada."
+      },
+      "gentle": {
+        "title": "Realmente sin dolor",
+        "description": "Anestesia moderna, ritmo sin apuro y una señal para que pares el tratamiento en cualquier momento."
+      },
+      "modern": {
+        "title": "Tecnología actual",
+        "description": "Escaneo digital, imágenes 3D y coronas en el día: menos visitas y mejor ajuste."
+      }
+    },
+    "portraitAlt": "Retrato del Dr. Isaac Fernando Meta"
+  },
+  "process": {
+    "eyebrow": "Tu visita",
+    "title": "Cuatro pasos, sin sorpresas",
+    "lead": "Siempre sabés qué viene después, cuánto cuesta y por qué se recomienda.",
+    "steps": {
+      "one": {
+        "title": "Escribinos",
+        "description": "Contanos por WhatsApp qué te está molestando. Respondemos el mismo día con opciones concretas de turno."
+      },
+      "two": {
+        "title": "Diagnóstico completo",
+        "description": "Un examen de 45 minutos con escaneo digital y fotos. Te mostramos en pantalla exactamente lo que vemos."
+      },
+      "three": {
+        "title": "Plan y presupuesto",
+        "description": "Un plan escrito con cada opción y su costo, dividido en etapas para que empieces por donde te convenga."
+      },
+      "four": {
+        "title": "Tratamiento y seguimiento",
+        "description": "Tratamiento sin apuro, un llamado de control después y un recordatorio cuando toque el próximo turno."
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Opiniones de pacientes",
+    "title": "Lo que dicen los pacientes al salir",
+    "items": [
+      {
+        "quote": "Había evitado al dentista durante once años. El Dr. Meta me explicó cada paso antes de tocar nada. Ya volví tres veces sin angustiarme.",
+        "name": "Carolina R.",
+        "role": "Paciente de implante y corona"
+      },
+      {
+        "quote": "Me mostró el escaneo 3D y me explicó por qué la opción más barata iba a fallar en dos años. Nadie me había dado el razonamiento antes. Seguí su plan y valió la pena.",
+        "name": "Daniel M.",
+        "role": "Rehabilitación completa"
+      },
+      {
+        "quote": "Mi hija tiene trece años y les tiene terror a las agujas. Salió preguntando cuándo era el próximo turno. Con eso te digo todo.",
+        "name": "Sofía L.",
+        "role": "Madre de paciente de ortodoncia"
+      },
+      {
+        "quote": "Me partí un molar un domingo. Escribí al WhatsApp y el lunes a las ocho ya tenía turno. Resuelto en una sesión, sin vueltas.",
+        "name": "Martín G.",
+        "role": "Paciente de urgencia"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Preguntas",
+    "title": "Lo que nos preguntan antes de pedir turno",
+    "items": [
+      {
+        "question": "¿Me va a doler?",
+        "answer": "Casi con seguridad mucho menos de lo que esperás. Usamos técnicas modernas de anestesia local, trabajamos sin apuro y tenés una señal con la mano para que paremos en cualquier momento. Si tenés miedo, avisanos al pedir el turno y planificamos una primera visita más larga y suave."
+      },
+      {
+        "question": "¿Cuánto cuesta la primera consulta?",
+        "answer": "El diagnóstico completo (examen, escaneo digital y fotos) tiene un valor fijo que te informamos al reservar, sin adicionales. Te vas con un plan escrito y los precios, y no hay ninguna obligación de empezar el tratamiento."
+      },
+      {
+        "question": "¿Trabajan con obras sociales y prepagas?",
+        "answer": "Trabajamos con la mayoría de las principales coberturas de Argentina y emitimos la documentación para pedir reintegros. Mandanos los datos de tu plan por WhatsApp y te confirmamos la cobertura antes de que vengas."
+      },
+      {
+        "question": "¿En cuánto tiempo me pueden atender?",
+        "answer": "Los turnos de rutina suelen estar disponibles en la misma semana. Además reservamos lugares para urgencias todos los días, así que los casos urgentes se atienden normalmente dentro de las 24 horas."
+      },
+      {
+        "question": "¿Qué idiomas se hablan en el consultorio?",
+        "answer": "El Dr. Meta y su equipo atienden en inglés, español y hebreo, así que podés hablar de tu tratamiento en el idioma en el que te sientas más cómodo."
+      },
+      {
+        "question": "¿Puedo venir acompañado?",
+        "answer": "Siempre. Tu pareja, un amigo o un familiar puede quedarse en el consultorio durante todo el turno, y lo recomendamos si estás nervioso."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Pedí tu turno",
+    "lead": "WhatsApp es la forma más rápida de contactarnos: los mensajes se responden en general dentro de un par de horas en horario de atención.",
+    "whatsapp": {
+      "label": "WhatsApp",
+      "cta": "Escribinos por WhatsApp",
+      "note": "Respuesta más rápida",
+      "prefill": "¡Hola! Quisiera pedir un turno con el Dr. Meta."
+    },
+    "phone": { "label": "Teléfono" },
+    "email": { "label": "Correo" },
+    "address": { "label": "Consultorio" },
+    "directions": "Cómo llegar",
+    "hours": {
+      "label": "Horarios de atención",
+      "weekdays": "Lunes a viernes",
+      "weekdaysValue": "9:00 - 19:00",
+      "saturday": "Sábado",
+      "saturdayValue": "9:00 - 13:00",
+      "sunday": "Domingo",
+      "sundayValue": "Solo urgencias"
+    },
+    "form": {
+      "title": "O mandanos un mensaje",
+      "name": "Tu nombre",
+      "namePlaceholder": "Ana Pérez",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "ana.perez{'@'}ejemplo.com",
+      "reason": "¿En qué te podemos ayudar?",
+      "reasonPlaceholder": "Elegí una opción",
+      "reasonOptions": {
+        "checkup": "Control de rutina y limpieza",
+        "cosmetic": "Tratamiento estético",
+        "implants": "Implantes",
+        "orthodontics": "Ortodoncia",
+        "emergency": "Algo urgente",
+        "other": "Otra cosa"
+      },
+      "message": "Mensaje",
+      "messagePlaceholder": "Contanos brevemente qué te pasa y en qué horarios estás disponible.",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Gracias! Tu mensaje fue enviado. Te respondemos dentro de un día hábil.",
+      "demoNotice": "Formulario de demostración: no se envía ni se almacena ningún dato.",
+      "errors": {
+        "name": "Por favor, ingresá tu nombre.",
+        "email": "Por favor, ingresá un correo electrónico válido.",
+        "reason": "Por favor, elegí un motivo de consulta.",
+        "message": "Contanos brevemente qué necesitás."
+      },
+      "summaryTitle": "Corregí lo siguiente antes de enviar:"
+    }
+  },
+  "footer": {
+    "tagline": "Odontología moderna y sin dolor en el corazón de Buenos Aires.",
+    "navTitle": "Secciones",
+    "contactTitle": "Contacto",
+    "legalTitle": "Legales",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "accessibility": "Declaración de accesibilidad",
+    "rights": "Todos los derechos reservados.",
+    "licence": "Matrícula n.º 12345 — Asociación Odontológica Argentina"
+  }
+}

@@ -1,0 +1,132 @@
+/**
+ * Design tokens — Isaac Fernando Meta DDS
+ * Style: Soft UI Evolution (a11y risk: low, light + dark supported)
+ * Palette base: "Calm cyan + health green" from ui-ux-pro-max product palette.
+ *
+ * Contrast note: the raw palette pairs white text with #0891B2 (3.6:1) and
+ * #059669 (3.7:1), both of which fail WCAG AA for normal text. The -deep
+ * variants below are the ones used behind white text: #0E7490 = 5.34:1 and
+ * #047857 = 5.45:1. Reserve the bright originals for large text, borders,
+ * icons and fills.
+ */
+
+:root {
+  /* ---- Brand ---- */
+  --color-primary: #0891b2;
+  --color-primary-deep: #0e7490; /* white text -> 5.34:1 */
+  --color-primary-soft: #cffafe;
+  --color-on-primary: #ffffff;
+
+  --color-secondary: #22d3ee;
+  --color-on-secondary: #0f172a;
+
+  --color-accent: #059669; /* WhatsApp / booking green */
+  --color-accent-deep: #047857; /* white text -> 5.45:1 */
+  --color-accent-soft: #d1fae5;
+  --color-on-accent: #ffffff;
+
+  /* ---- Surfaces ---- */
+  --color-background: #ecfeff;
+  --color-background-alt: #f8feff;
+  --color-foreground: #164e63; /* on background -> 8.6:1 */
+  --color-card: #ffffff;
+  --color-card-foreground: #164e63;
+  --color-muted: #e8f1f6;
+  --color-muted-foreground: #475569; /* on white -> 7.5:1 */
+  --color-border: #a5f3fc;
+  --color-border-strong: #67e8f9;
+
+  --color-destructive: #dc2626;
+  --color-on-destructive: #ffffff;
+  --color-ring: #0891b2;
+
+  /* ---- Typography ---- */
+  --font-sans: 'Rubik', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.8125rem; /* 13px - never below 12px */
+  --text-sm: 0.9375rem; /* 15px */
+  --text-base: 1rem; /* 16px base */
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: clamp(2.25rem, 5vw, 3.5rem);
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6; /* >= 1.5 for body */
+  --leading-relaxed: 1.75;
+
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ---- Spacing (density 3 = spacious, 24-96px) ---- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem; /* 24 */
+  --space-lg: 2.25rem; /* 36 */
+  --space-xl: 3rem; /* 48 */
+  --space-2xl: 4.5rem; /* 72 */
+  --space-3xl: 6rem; /* 96 */
+
+  /* ---- Radius (Soft UI Evolution: 8-12px) ---- */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* ---- Soft shadows: softer than flat, clearer than neumorphism ---- */
+  --shadow-xs: 0 1px 2px rgba(22, 78, 99, 0.06);
+  --shadow-sm: 0 2px 4px rgba(22, 78, 99, 0.07), 0 1px 2px rgba(22, 78, 99, 0.05);
+  --shadow-md: 0 6px 16px rgba(22, 78, 99, 0.08), 0 2px 4px rgba(22, 78, 99, 0.05);
+  --shadow-lg: 0 16px 40px rgba(22, 78, 99, 0.11), 0 4px 10px rgba(22, 78, 99, 0.05);
+  --shadow-ring: 0 0 0 4px rgba(8, 145, 178, 0.16);
+
+  /* ---- Motion (tier: subtle, 200-300ms) ---- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur-base: 220ms;
+  --dur-slow: 300ms;
+
+  /* ---- Layout ---- */
+  --container: 1180px;
+  --container-narrow: 780px;
+  --header-h: 4.5rem;
+}
+
+/* Dark mode — Soft UI Evolution supports it; keep the same token names. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-primary: #22d3ee;
+    --color-primary-deep: #0e7490;
+    --color-primary-soft: #164e63;
+    --color-on-primary: #04212b;
+
+    --color-accent: #34d399;
+    --color-accent-deep: #059669;
+    --color-accent-soft: #064e3b;
+    --color-on-accent: #022c22;
+
+    --color-background: #06232c;
+    --color-background-alt: #0a2c37;
+    --color-foreground: #e6fbff;
+    --color-card: #0e3542;
+    --color-card-foreground: #e6fbff;
+    --color-muted: #12414f;
+    --color-muted-foreground: #a8cbd6; /* on --color-card -> ~7:1 */
+    --color-border: #1d5566;
+    --color-border-strong: #2b7387;
+
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.32), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.38), 0 2px 4px rgba(0, 0, 0, 0.26);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.46), 0 4px 10px rgba(0, 0, 0, 0.3);
+    --shadow-ring: 0 0 0 4px rgba(34, 211, 238, 0.22);
+  }
+}

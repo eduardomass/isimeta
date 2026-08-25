@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "title": "Dr. Isaac Fernando Meta, DDS — Modern Dental Care",
+    "description": "Gentle, modern dentistry in Buenos Aires. Implants, orthodontics, cosmetic and preventive care from Dr. Isaac Fernando Meta, DDS."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "mainNav": "Main navigation",
+    "languageSwitcher": "Change language",
+    "currentLanguage": "Current language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "previousTestimonial": "Previous testimonial",
+    "nextTestimonial": "Next testimonial",
+    "pauseTestimonials": "Pause testimonial rotation",
+    "playTestimonials": "Resume testimonial rotation",
+    "slidePosition": "Testimonial {current} of {total}",
+    "whatsappNew": "Opens WhatsApp in a new tab",
+    "externalLink": "Opens in a new tab"
+  },
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "process": "Your visit",
+    "testimonials": "Reviews",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "book": "Book a visit"
+  },
+  "hero": {
+    "badge": "Accepting new patients",
+    "title": "Dentistry that feels calm, careful and completely yours",
+    "subtitle": "Dr. Isaac Fernando Meta and his team combine 18 years of clinical experience with modern, low-pain technique — so your visit is something you can actually look forward to.",
+    "ctaPrimary": "Book on WhatsApp",
+    "ctaSecondary": "Explore treatments",
+    "reassurance": "Same-week appointments · Emergency slots kept open daily",
+    "imageAlt": "Dr. Isaac Fernando Meta in his dental practice"
+  },
+  "trust": {
+    "title": "Care you can measure",
+    "stats": {
+      "years": { "value": "18+", "label": "Years in practice" },
+      "patients": { "value": "6,400", "label": "Patients treated" },
+      "rating": { "value": "4.9/5", "label": "Average patient rating" },
+      "implants": { "value": "1,200", "label": "Implants placed" }
+    },
+    "credentials": {
+      "title": "Credentials and memberships",
+      "items": [
+        "DDS — University of Buenos Aires, School of Dentistry",
+        "Certified Implantologist, Argentine Society of Implantology",
+        "Postgraduate in Orthodontics and Dentofacial Orthopedics",
+        "Member, Argentine Dental Association"
+      ]
+    }
+  },
+  "services": {
+    "eyebrow": "Treatments",
+    "title": "Everything your smile needs, under one roof",
+    "lead": "From a routine cleaning to full mouth restoration, treatment is planned in one place — no bouncing between clinics.",
+    "items": {
+      "preventive": {
+        "title": "Preventive care",
+        "description": "Cleanings, sealants, fluoride and early-detection screening to stop problems before they start.",
+        "detail": "45-minute appointment"
+      },
+      "cosmetic": {
+        "title": "Cosmetic dentistry",
+        "description": "Whitening, porcelain veneers and composite bonding designed around your face, not a template.",
+        "detail": "Digital preview first"
+      },
+      "implants": {
+        "title": "Dental implants",
+        "description": "Guided implant surgery with 3D planning for a natural bite and a permanent result.",
+        "detail": "3D-planned placement"
+      },
+      "orthodontics": {
+        "title": "Orthodontics",
+        "description": "Clear aligners and modern low-profile braces for teens and adults, with progress you can see.",
+        "detail": "Aligners or fixed braces"
+      },
+      "endodontics": {
+        "title": "Root canal therapy",
+        "description": "Microscope-assisted endodontics that saves the natural tooth, usually in one comfortable session.",
+        "detail": "Often one session"
+      },
+      "emergency": {
+        "title": "Emergency care",
+        "description": "Broken tooth, lost filling or sudden pain — we keep slots open every day for urgent cases.",
+        "detail": "Same-day availability"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "About Dr. Meta",
+    "title": "A dentist for people who would rather be anywhere else",
+    "paragraphs": [
+      "Dr. Isaac Fernando Meta has spent 18 years building a practice around one idea: dental anxiety is not the patient's problem to solve. It is the dentist's.",
+      "That shapes everything here — from unhurried appointments and clear explanations before anything happens, to modern anaesthetic technique that keeps discomfort genuinely minimal.",
+      "He trained at the University of Buenos Aires and has since completed advanced certification in implantology and orthodontics, with continuing education every year in digital dentistry and pain management."
+    ],
+    "values": {
+      "honest": {
+        "title": "Honest treatment plans",
+        "description": "You get every option with real prices, including the option to wait. Nothing is sold to you."
+      },
+      "gentle": {
+        "title": "Genuinely gentle",
+        "description": "Modern anaesthesia, unhurried pacing and a stop signal you can use at any moment."
+      },
+      "modern": {
+        "title": "Modern technology",
+        "description": "Digital scanning, 3D imaging and same-day crowns — fewer visits, better fit."
+      }
+    },
+    "portraitAlt": "Portrait of Dr. Isaac Fernando Meta"
+  },
+  "process": {
+    "eyebrow": "Your visit",
+    "title": "Four steps, no surprises",
+    "lead": "You always know what happens next, what it costs, and why it is being recommended.",
+    "steps": {
+      "one": {
+        "title": "Say hello",
+        "description": "Message us on WhatsApp with what is bothering you. We reply the same day with real appointment options."
+      },
+      "two": {
+        "title": "Full assessment",
+        "description": "A 45-minute exam with digital scans and photos. We show you exactly what we see on screen."
+      },
+      "three": {
+        "title": "Plan and pricing",
+        "description": "A written plan with every option and its cost, staged so you can start where it makes sense for you."
+      },
+      "four": {
+        "title": "Treatment and follow-up",
+        "description": "Unhurried treatment, then a check-in call afterwards and a reminder when your next visit is due."
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Patient reviews",
+    "title": "What patients say afterwards",
+    "items": [
+      {
+        "quote": "I had avoided dentists for eleven years. Dr. Meta talked me through every single step before touching anything. I have now been back three times without dreading it.",
+        "name": "Carolina R.",
+        "role": "Implant and crown patient"
+      },
+      {
+        "quote": "He showed me the 3D scan and explained why the cheaper option would fail in two years. Nobody had ever given me the reasoning before. I went with his plan and it was worth it.",
+        "name": "Daniel M.",
+        "role": "Full mouth restoration"
+      },
+      {
+        "quote": "My daughter is thirteen and terrified of needles. She came out asking when the next appointment was. That alone tells you everything.",
+        "name": "Sofía L.",
+        "role": "Parent of orthodontic patient"
+      },
+      {
+        "quote": "Cracked a molar on a Sunday. Messaged the WhatsApp number and had an appointment Monday at eight. Fixed in one session, no drama.",
+        "name": "Martín G.",
+        "role": "Emergency patient"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Things people ask before booking",
+    "items": [
+      {
+        "question": "Will it hurt?",
+        "answer": "Almost certainly less than you expect. We use modern local anaesthetic technique, work at an unhurried pace, and you have a hand signal to stop us at any moment. If you are anxious, tell us when you book and we will plan a longer, gentler first visit."
+      },
+      {
+        "question": "How much does a first visit cost?",
+        "answer": "The full assessment — exam, digital scan and photos — is a fixed fee quoted to you when you book, with no add-ons. You leave with a written plan and prices, and there is no obligation to start treatment."
+      },
+      {
+        "question": "Do you accept insurance?",
+        "answer": "We work with most major Argentine health plans and can issue documentation for reimbursement claims. Send us your plan details on WhatsApp and we will confirm your coverage before you come in."
+      },
+      {
+        "question": "How quickly can I be seen?",
+        "answer": "Routine appointments are usually available the same week. We also hold emergency slots open every day, so urgent problems are normally seen within 24 hours."
+      },
+      {
+        "question": "What languages are spoken at the practice?",
+        "answer": "Dr. Meta and his team consult in English, Spanish and Hebrew, so you can discuss your treatment in the language you are most comfortable with."
+      },
+      {
+        "question": "Can I bring someone with me?",
+        "answer": "Always. A partner, friend or parent is welcome in the room for the whole appointment, and we encourage it if you are nervous."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Book your visit",
+    "lead": "WhatsApp is the fastest way to reach us — messages are usually answered within a couple of hours during opening times.",
+    "whatsapp": {
+      "label": "WhatsApp",
+      "cta": "Message us on WhatsApp",
+      "note": "Fastest reply",
+      "prefill": "Hello! I would like to book a dental appointment with Dr. Meta."
+    },
+    "phone": { "label": "Phone" },
+    "email": { "label": "Email" },
+    "address": { "label": "Practice" },
+    "directions": "Get directions",
+    "hours": {
+      "label": "Opening hours",
+      "weekdays": "Monday to Friday",
+      "weekdaysValue": "9:00 - 19:00",
+      "saturday": "Saturday",
+      "saturdayValue": "9:00 - 13:00",
+      "sunday": "Sunday",
+      "sundayValue": "Emergencies only"
+    },
+    "form": {
+      "title": "Or send a message",
+      "name": "Your name",
+      "namePlaceholder": "Ana Pérez",
+      "email": "Email address",
+      "emailPlaceholder": "ana.perez{'@'}example.com",
+      "reason": "What can we help with?",
+      "reasonPlaceholder": "Choose an option",
+      "reasonOptions": {
+        "checkup": "Routine check-up and cleaning",
+        "cosmetic": "Cosmetic treatment",
+        "implants": "Implants",
+        "orthodontics": "Orthodontics",
+        "emergency": "Something urgent",
+        "other": "Something else"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us briefly what is going on and when you are usually free.",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Thank you. Your message has been sent — we will reply within one working day.",
+      "demoNotice": "Demo form: no data is transmitted or stored.",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email address.",
+        "reason": "Please choose a reason for your visit.",
+        "message": "Please tell us briefly what you need."
+      },
+      "summaryTitle": "Please fix the following before sending:"
+    }
+  },
+  "footer": {
+    "tagline": "Gentle, modern dentistry in the heart of Buenos Aires.",
+    "navTitle": "Explore",
+    "contactTitle": "Contact",
+    "legalTitle": "Legal",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "accessibility": "Accessibility statement",
+    "rights": "All rights reserved.",
+    "licence": "Licence no. 12345 — Argentine Dental Association"
+  }
+}
