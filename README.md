@@ -74,6 +74,37 @@ node -e "const a=require('./src/i18n/locales/en.json'),b=require('./src/i18n/loc
 Literal `@` in a message must be escaped as `{'@'}` — vue-i18n reads a bare `@`
 as a linked-message token.
 
+### Never use `:global()` with a descendant selector
+
+This one shipped a fully mirrored page, so it is worth stating plainly. Inside a
+component's scoped `<style>`, this **looks** correct:
+
+```css
+:global([dir='rtl']) .mobile__chevron {
+  transform: scaleX(-1);
+}
+```
+
+but the SFC scoped-CSS transform drops the descendant and emits:
+
+```css
+[dir=rtl] { transform: scaleX(-1); }
+```
+
+That selector matches `<html>`, so the whole document is mirrored — every glyph
+renders backwards in Hebrew. The source reads fine; the bug is only visible in
+the built CSS.
+
+Direction-dependent rules therefore live in `src/assets/styles/base.css`, which
+is not scoped. Add the `rtl-mirror` utility class to anything that must flip
+along the inline axis (forward-pointing chevrons, gradients that fade toward the
+reading direction).
+
+`npm run build` runs `scripts/verify-rtl.mjs` as a `postbuild` step, which fails
+the build if any rule targets `[dir=rtl]`/`[dir=ltr]` directly or if `:global()`
+reappears with a descendant. Both halves of that check are tested against a
+deliberately reintroduced regression.
+
 ### Bidi isolation (required for Hebrew)
 
 Mirroring the layout is not enough. Inside `dir="rtl"`, the Unicode Bidirectional

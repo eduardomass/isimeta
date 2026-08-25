@@ -272,6 +272,25 @@ ol {
 }
 
 /* ==========================================================================
+   Direction-aware elements
+
+   Add `rtl-mirror` to anything that must flip along the inline axis under RTL:
+   chevrons that point "forward", and gradient rules that fade toward the
+   reading direction.
+
+   This lives in the global stylesheet on purpose. Writing
+   `:global([dir='rtl']) .foo { transform: scaleX(-1) }` inside a component's
+   scoped <style> is silently mis-compiled by the SFC scoped-CSS transform: the
+   descendant is dropped and the output becomes a bare
+   `[dir=rtl] { transform: scaleX(-1) }`, which matches <html> and mirrors every
+   glyph on the page. Never use :global() with a descendant selector.
+   ========================================================================== */
+
+[dir='rtl'] .rtl-mirror {
+  transform: scaleX(-1);
+}
+
+/* ==========================================================================
    Scroll reveal (subtle motion tier)
    ========================================================================== */
 

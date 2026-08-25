@@ -30,7 +30,7 @@ const STEPS = [
         >
           <div class="process__marker">
             <span class="process__number">{{ i + 1 }}</span>
-            <span class="process__connector" aria-hidden="true"></span>
+            <span class="process__connector rtl-mirror" aria-hidden="true"></span>
           </div>
 
           <div class="process__body">
@@ -144,10 +144,6 @@ const STEPS = [
     inline-size: 100%;
     block-size: 2px;
     background: linear-gradient(to right, var(--color-border-strong), transparent);
-  }
-
-  :global([dir='rtl']) .process__connector {
-    background: linear-gradient(to left, var(--color-border-strong), transparent);
   }
 
   .process__body,

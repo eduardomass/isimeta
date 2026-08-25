@@ -151,7 +151,7 @@ onBeforeUnmount(stop)
 
         <div class="carousel__controls">
           <button type="button" class="carousel__btn" @click="prev">
-            <AppIcon name="chevronStart" :size="20" :label="t('a11y.previousTestimonial')" class="carousel__chevron" />
+            <AppIcon name="chevronStart" :size="20" :label="t('a11y.previousTestimonial')" class="carousel__chevron rtl-mirror" />
           </button>
 
           <ul class="carousel__dots">
@@ -182,7 +182,7 @@ onBeforeUnmount(stop)
           </button>
 
           <button type="button" class="carousel__btn" @click="next">
-            <AppIcon name="chevronEnd" :size="20" :label="t('a11y.nextTestimonial')" class="carousel__chevron" />
+            <AppIcon name="chevronEnd" :size="20" :label="t('a11y.nextTestimonial')" class="carousel__chevron rtl-mirror" />
           </button>
         </div>
       </div>
@@ -307,11 +307,6 @@ onBeforeUnmount(stop)
 .carousel__btn:hover {
   background-color: var(--color-primary-soft);
   box-shadow: var(--shadow-sm);
-}
-
-/* Chevrons point along the reading direction. */
-:global([dir='rtl']) .carousel__chevron {
-  transform: scaleX(-1);
 }
 
 .carousel__dots {

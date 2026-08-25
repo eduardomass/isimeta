@@ -106,7 +106,7 @@ onBeforeUnmount(() => {
           <li v-for="item in NAV_ITEMS" :key="item.id">
             <a class="mobile__link" :href="`#${item.id}`" @click="closeMobile()">
               {{ t(item.key) }}
-              <AppIcon name="chevronEnd" :size="18" class="mobile__chevron" />
+              <AppIcon name="chevronEnd" :size="18" class="mobile__chevron rtl-mirror" />
             </a>
           </li>
         </ul>
@@ -283,11 +283,6 @@ onBeforeUnmount(() => {
 
 .mobile__chevron {
   color: var(--color-muted-foreground);
-  /* Mirrors with dir=rtl because the icon is direction-aware via transform. */
-}
-
-:global([dir='rtl']) .mobile__chevron {
-  transform: scaleX(-1);
 }
 
 .mobile__cta {

@@ -116,7 +116,7 @@ const CONTACT_ROWS = [
                   rel="noopener noreferrer"
                 >
                   {{ t('contact.directions') }}
-                  <AppIcon name="chevronEnd" :size="15" class="contact__directions-icon" />
+                  <AppIcon name="chevronEnd" :size="15" class="contact__directions-icon rtl-mirror" />
                   <span class="sr-only">{{ t('a11y.externalLink') }}</span>
                 </a>
               </span>
@@ -408,10 +408,6 @@ const CONTACT_ROWS = [
 
 .contact__directions:hover {
   text-decoration: underline;
-}
-
-:global([dir='rtl']) .contact__directions-icon {
-  transform: scaleX(-1);
 }
 
 /* ============ Hours ============ */
