@@ -1,0 +1,17 @@
+{
+  // Static-assets-only Worker: there is no server-side code, so no "main".
+  // Cloudflare serves ./dist straight from its asset store.
+  //
+  // This file also stops `wrangler deploy` from running its auto-config
+  // detection, which parses vite.config.js with a parser that does not
+  // support `import.meta` and fails with "Error parsing file".
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "isimeta",
+  "compatibility_date": "2026-08-20",
+  "assets": {
+    "directory": "./dist",
+    // One page, anchor-only navigation: serve index.html for unknown paths
+    // rather than a bare 404.
+    "not_found_handling": "single-page-application"
+  }
+}

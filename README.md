@@ -96,6 +96,47 @@ Built against WCAG 2.2 AA:
 - **Icons** — decorative icons are `aria-hidden`; icon-only controls carry a
   real accessible name.
 
+## Deployment (Cloudflare Workers)
+
+The site deploys as a **static-assets-only Worker** — there is no server-side
+code, so `wrangler.jsonc` declares no `main`, only an `assets` directory.
+
+```bash
+npm run deploy    # build, then wrangler deploy
+```
+
+For **Workers Builds** (the GitHub integration), set:
+
+| Setting | Value |
+| --- | --- |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+
+The build command matters: `wrangler deploy` uploads `./dist`, so it fails with
+`Missing entry-point to Worker script or to assets directory` if nothing built
+it first.
+
+### Why `wrangler.jsonc` is required, not optional
+
+Without a Wrangler config file, `wrangler deploy` runs auto-config detection,
+which calls `checkIfViteConfigUsesCloudflarePlugin` to see whether the project
+uses `@cloudflare/vite-plugin`. That check parses `vite.config.js` with a parser
+that does not support **`import.meta`**, and the build dies with:
+
+```
+✘ [ERROR] Error parsing file: /opt/buildhome/repo/vite.config.js
+```
+
+`vite.config.js` uses `import.meta.url` for the `@` alias — the standard
+create-vue idiom, and correct because it resolves independently of the working
+directory. Rather than weaken it to a cwd-relative path, `wrangler.jsonc`
+suppresses the detection pass entirely: with a config file present, Wrangler
+never parses the Vite config. This was confirmed by bisecting the config —
+`import.meta.url` is the sole trigger; the `node:url` import parses fine.
+
+So: **do not delete `wrangler.jsonc`**, and if you ever see that parse error
+again, check that it is still being found from the build's working directory.
+
 ## Before going live
 
 These are deliberate placeholders, not oversights:
