@@ -47,25 +47,27 @@ const bookUrl = computed(() => whatsappUrl(t('contact.whatsapp.prefill')))
         <div class="hero__orb hero__orb--one" aria-hidden="true"></div>
         <div class="hero__orb hero__orb--two" aria-hidden="true"></div>
 
+        <!--
+          Shows the credential rather than a star rating: the practice publishes
+          individual reviews but no aggregate score, so there is no number here
+          to stand behind.
+        -->
         <div class="hero__card">
           <span class="hero__card-mark" aria-hidden="true">
-            <AppIcon name="tooth" :size="34" />
+            <AppIcon name="award" :size="34" />
           </span>
-          <p class="hero__card-title"><bdi>{{ t('trust.stats.rating.value') }}</bdi></p>
-          <p class="hero__card-label">{{ t('trust.stats.rating.label') }}</p>
-          <div class="hero__stars" aria-hidden="true">
-            <AppIcon v-for="n in 5" :key="n" name="star" :size="16" class="hero__star" />
-          </div>
+          <p class="hero__card-title"><bdi>{{ t('hero.card.credential') }}</bdi></p>
+          <p class="hero__card-label"><bdi>{{ t('hero.card.institutions') }}</bdi></p>
         </div>
 
         <div class="hero__chip hero__chip--years">
-          <strong><bdi>{{ t('trust.stats.years.value') }}</bdi></strong>
-          <span>{{ t('trust.stats.years.label') }}</span>
+          <strong><bdi>{{ t('trust.stats.practice.value') }}</bdi></strong>
+          <span>{{ t('trust.stats.practice.label') }}</span>
         </div>
 
         <div class="hero__chip hero__chip--patients">
-          <strong><bdi>{{ t('trust.stats.patients.value') }}</bdi></strong>
-          <span>{{ t('trust.stats.patients.label') }}</span>
+          <strong><bdi>{{ t('trust.stats.papers.value') }}</bdi></strong>
+          <span>{{ t('trust.stats.papers.label') }}</span>
         </div>
       </div>
     </div>
@@ -208,22 +210,14 @@ const bookUrl = computed(() => whatsappUrl(t('contact.whatsapp.prefill')))
   font-size: var(--text-3xl);
   font-weight: var(--weight-bold);
   line-height: 1;
+  letter-spacing: 0.02em;
 }
 
 .hero__card-label {
   font-size: var(--text-sm);
   color: var(--color-muted-foreground);
-}
-
-.hero__stars {
-  display: flex;
-  gap: 2px;
-  color: var(--color-accent-deep);
-  margin-block-start: var(--space-3xs);
-}
-
-.hero__star {
-  fill: currentColor;
+  max-inline-size: 22ch;
+  line-height: var(--leading-snug);
 }
 
 /*

@@ -99,6 +99,7 @@ onBeforeUnmount(stop)
       <header class="section__header reveal">
         <span class="section__eyebrow">{{ t('testimonials.eyebrow') }}</span>
         <h2 id="testimonials-title" class="section__title">{{ t('testimonials.title') }}</h2>
+        <p class="section__lead">{{ t('testimonials.lead') }}</p>
       </header>
 
       <div
@@ -132,9 +133,9 @@ onBeforeUnmount(stop)
               <p>{{ item.quote }}</p>
             </blockquote>
             <footer class="carousel__author">
-              <span class="carousel__avatar" aria-hidden="true">{{ item.name.charAt(0) }}</span>
+              <span class="carousel__avatar" aria-hidden="true"><bdi>{{ item.name.charAt(0) }}</bdi></span>
               <span class="carousel__author-text">
-                <cite class="carousel__name">{{ item.name }}</cite>
+                <cite class="carousel__name"><bdi>{{ item.name }}</bdi></cite>
                 <span class="carousel__role">{{ item.role }}</span>
               </span>
               <span class="carousel__stars" aria-hidden="true">
@@ -185,6 +186,8 @@ onBeforeUnmount(stop)
             <AppIcon name="chevronEnd" :size="20" :label="t('a11y.nextTestimonial')" class="carousel__chevron rtl-mirror" />
           </button>
         </div>
+
+        <p class="carousel__attribution">{{ t('testimonials.attribution') }}</p>
       </div>
     </div>
   </section>
@@ -338,6 +341,13 @@ onBeforeUnmount(stop)
 
 .carousel__dot:hover::before {
   background-color: var(--color-primary);
+}
+
+.carousel__attribution {
+  margin-block-start: var(--space-sm);
+  text-align: center;
+  font-size: var(--text-xs);
+  color: var(--color-muted-foreground);
 }
 
 .carousel__dot--active::before {

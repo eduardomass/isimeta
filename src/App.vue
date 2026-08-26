@@ -35,7 +35,16 @@ watchEffect(() => {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Dentist',
-    name: `Dr. ${site.doctor.fullName}, ${site.doctor.credential}`,
+    name: `${site.doctor.shortName}, ${site.doctor.credential}`,
+    founder: {
+      '@type': 'Person',
+      name: `${site.doctor.fullName}, ${site.doctor.credential}`,
+      alumniOf: [
+        { '@type': 'CollegeOrUniversity', name: 'University of Buenos Aires' },
+        { '@type': 'CollegeOrUniversity', name: 'The Ohio State University' },
+      ],
+      knowsLanguage: ['en', 'es', 'he'],
+    },
     description: t('meta.description'),
     inLanguage: locale.value,
     telephone: `+${site.whatsapp.digits}`,
@@ -43,30 +52,24 @@ watchEffect(() => {
     address: {
       '@type': 'PostalAddress',
       streetAddress: site.address.street,
-      addressLocality: site.address.city,
+      addressLocality: `${site.address.neighbourhood}, ${site.address.city}`,
       addressCountry: 'AR',
     },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
-        closes: '19:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
-        opens: '09:00',
-        closes: '13:00',
-      },
-    ],
-    availableService: ['preventive', 'cosmetic', 'implants', 'orthodontics', 'endodontics', 'emergency'].map(
-      (key) => ({
-        '@type': 'MedicalProcedure',
-        name: t(`services.items.${key}.title`),
-        description: t(`services.items.${key}.description`),
-      }),
-    ),
+    // The practice publishes "by appointment, Monday to Friday" and no times,
+    // so the specification carries the days only.
+    openingHours: 'Mo-Fr',
+    availableService: [
+      'implants',
+      'grafting',
+      'rehabilitation',
+      'veneers',
+      'smileDesign',
+      'whitening',
+    ].map((key) => ({
+      '@type': 'MedicalProcedure',
+      name: t(`services.items.${key}.title`),
+      description: t(`services.items.${key}.description`),
+    })),
     mainEntityOfPage: {
       '@type': 'FAQPage',
       mainEntity: tm('faq.items').map((item) => ({

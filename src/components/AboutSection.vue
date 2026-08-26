@@ -6,9 +6,9 @@ import AppIcon from './AppIcon.vue'
 const { t, tm, rt } = useI18n()
 
 const VALUES = [
-  { key: 'honest', icon: 'handshake' },
-  { key: 'gentle', icon: 'heart' },
-  { key: 'modern', icon: 'scan' },
+  { key: 'research', icon: 'scan' },
+  { key: 'periodontal', icon: 'shield' },
+  { key: 'international', icon: 'globe' },
 ]
 
 /** Initials for the portrait placeholder. */
@@ -41,6 +41,8 @@ const initials = site.doctor.fullName
         <header class="reveal">
           <span class="section__eyebrow">{{ t('about.eyebrow') }}</span>
           <h2 id="about-title" class="section__title">{{ t('about.title') }}</h2>
+          <p class="section__lead">{{ t('about.lead') }}</p>
+          <p class="about__affiliation"><bdi>{{ t('about.affiliation') }}</bdi></p>
         </header>
 
         <div class="about__prose reveal">
@@ -121,6 +123,16 @@ const initials = site.doctor.fullName
 }
 
 /* ---- Content ---- */
+.about__affiliation {
+  margin-block-start: var(--space-sm);
+  padding-inline-start: var(--space-sm);
+  border-inline-start: 3px solid var(--color-border-strong);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-primary-deep);
+  line-height: var(--leading-snug);
+}
+
 .about__prose {
   display: grid;
   gap: var(--space-sm);

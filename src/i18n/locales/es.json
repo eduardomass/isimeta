@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Dr. Isaac Fernando Meta, Odontólogo — Odontología moderna",
-    "description": "Odontología moderna y sin dolor en Buenos Aires. Implantes, ortodoncia, estética dental y prevención con el Dr. Isaac Fernando Meta."
+    "title": "Isaac F. Meta, DDS, MS — Implantes Dentales y Odontología Estética, Buenos Aires",
+    "description": "Consultorio privado en Palermo, Buenos Aires, enfocado en implantes dentales, rehabilitación oral y odontología estética. Odontólogo sugerido por la Embajada de EE.UU. desde 2008. Consultas en inglés y español."
   },
   "a11y": {
     "skipToContent": "Saltar al contenido principal",
@@ -10,253 +10,286 @@
     "currentLanguage": "Idioma actual",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
-    "previousTestimonial": "Testimonio anterior",
-    "nextTestimonial": "Testimonio siguiente",
-    "pauseTestimonials": "Pausar la rotación de testimonios",
-    "playTestimonials": "Reanudar la rotación de testimonios",
-    "slidePosition": "Testimonio {current} de {total}",
+    "previousTestimonial": "Opinión anterior",
+    "nextTestimonial": "Opinión siguiente",
+    "pauseTestimonials": "Pausar la rotación de opiniones",
+    "playTestimonials": "Reanudar la rotación de opiniones",
+    "slidePosition": "Opinión {current} de {total}",
     "whatsappNew": "Abre WhatsApp en una pestaña nueva",
     "externalLink": "Se abre en una pestaña nueva"
   },
   "nav": {
     "services": "Tratamientos",
-    "about": "Sobre el Dr.",
-    "process": "Tu visita",
+    "about": "Dr. Meta",
+    "process": "El tratamiento",
     "testimonials": "Opiniones",
-    "faq": "Preguntas",
+    "faq": "Preguntas Frecuentes",
     "contact": "Contacto",
-    "book": "Pedir turno"
+    "book": "Solicitar una consulta"
   },
   "hero": {
-    "badge": "Recibimos pacientes nuevos",
-    "title": "Odontología tranquila, cuidadosa y pensada para vos",
-    "subtitle": "El Dr. Isaac Fernando Meta y su equipo combinan 18 años de experiencia clínica con técnicas modernas de mínimo dolor, para que venir al dentista deje de ser un problema.",
-    "ctaPrimary": "Pedir turno por WhatsApp",
+    "badge": "Odontólogo sugerido por la Embajada de EE.UU. desde 2008",
+    "title": "Implantología planificada por un profesional que estudió cómo se comporta el hueso bajo carga",
+    "subtitle": "Consultorio privado en Palermo, Buenos Aires, enfocado en implantes dentales, rehabilitación oral y odontología estética — con formación en investigación de biología ósea detrás de cada decisión clínica.",
+    "ctaPrimary": "Solicitar una consulta",
     "ctaSecondary": "Ver tratamientos",
-    "reassurance": "Turnos en la misma semana · Urgencias todos los días",
-    "imageAlt": "El Dr. Isaac Fernando Meta en su consultorio"
+    "reassurance": "Consultas en inglés y español · Con turno previo, lunes a viernes",
+    "imageAlt": "Credenciales del Dr. Isaac Fernando Meta, DDS, MS",
+    "card": {
+      "credential": "DDS, MS",
+      "institutions": "Universidad de Buenos Aires · The Ohio State University"
+    }
   },
   "trust": {
-    "title": "Atención que se puede medir",
+    "title": "Una trayectoria verificable",
     "stats": {
-      "years": { "value": "18+", "label": "Años de práctica" },
-      "patients": { "value": "6.400", "label": "Pacientes atendidos" },
-      "rating": { "value": "4,9/5", "label": "Valoración promedio" },
-      "implants": { "value": "1.200", "label": "Implantes colocados" }
+      "practice": { "value": "2007", "label": "Consultorio privado en Palermo desde" },
+      "embassy": { "value": "2008", "label": "Odontólogo sugerido por la Embajada de EE.UU. desde" },
+      "papers": { "value": "5", "label": "Publicaciones revisadas por pares" },
+      "teaching": { "value": "2003–2023", "label": "Docencia de posgrado en Buenos Aires" }
     },
     "credentials": {
-      "title": "Formación y matrículas",
+      "title": "Trayectoria académica y profesional",
       "items": [
-        "Odontólogo — Universidad de Buenos Aires, Facultad de Odontología",
-        "Implantólogo certificado, Sociedad Argentina de Implantología",
-        "Posgrado en Ortodoncia y Ortopedia Dentofacial",
-        "Miembro de la Asociación Odontológica Argentina"
+        "1999–2002 — Formación de grado, Facultad de Odontología, Universidad de Buenos Aires",
+        "2002 — Odontólogo, UBA. 9° promedio más alto, promoción de 252",
+        "2004–2007 — Investigador becado, The Ohio State University",
+        "2007 — Maestría en Biología Oral, Facultad de Odontología, Ohio State University",
+        "2007 / 2021 — National Board Dental Examination, Partes I y II (EE.UU.)",
+        "2008–actualidad — Odontólogo sugerido por la Embajada de EE.UU. en Argentina",
+        "2012–actualidad — Consejo de Investigación, Asociación Odontológica Argentina"
       ]
+    },
+    "languages": {
+      "title": "Idiomas",
+      "items": ["Inglés — Avanzado", "Español — Nativo", "Hebreo — Intermedio"]
     }
   },
   "services": {
     "eyebrow": "Tratamientos",
-    "title": "Todo lo que tu sonrisa necesita, en un solo lugar",
-    "lead": "Desde una limpieza de rutina hasta una rehabilitación completa, todo el tratamiento se planifica en un mismo lugar, sin derivaciones entre clínicas.",
+    "title": "Implantes, rehabilitación y estética en un mismo consultorio",
+    "lead": "Dos pilares de tratamiento: implantología basada en investigación de biología ósea, y trabajo estético planificado por un profesional con formación en periodoncia, para que el resultado se sostenga estructuralmente.",
     "items": {
-      "preventive": {
-        "title": "Prevención",
-        "description": "Limpiezas, selladores, flúor y controles de detección temprana para frenar los problemas antes de que empiecen.",
-        "detail": "Turno de 45 minutos"
-      },
-      "cosmetic": {
-        "title": "Estética dental",
-        "description": "Blanqueamiento, carillas de porcelana y composite diseñados según tu cara, no según una plantilla.",
-        "detail": "Vista previa digital"
-      },
       "implants": {
         "title": "Implantes dentales",
-        "description": "Cirugía de implantes guiada con planificación 3D para una mordida natural y un resultado permanente.",
-        "detail": "Planificación 3D"
+        "description": "Un implante, varios implantes o rehabilitación de boca completa, planificados a partir de radiografía digital o tomografía (CBCT) y colocados bajo anestesia local.",
+        "detail": "Planificado con CBCT"
       },
-      "orthodontics": {
-        "title": "Ortodoncia",
-        "description": "Alineadores transparentes y brackets modernos de bajo perfil para adolescentes y adultos, con avances visibles.",
-        "detail": "Alineadores o brackets"
+      "grafting": {
+        "title": "Injerto óseo y elevación de seno",
+        "description": "Se realiza cuando las imágenes diagnósticas lo indican — una decisión conservadora y basada en evidencia sobre el injerto y los tiempos de cicatrización, no un paso automático.",
+        "detail": "Solo si las imágenes lo indican"
       },
-      "endodontics": {
-        "title": "Endodoncia",
-        "description": "Tratamiento de conducto asistido por microscopio que salva el diente natural, en general en una sola sesión cómoda.",
-        "detail": "Suele ser una sesión"
+      "rehabilitation": {
+        "title": "Rehabilitación oral",
+        "description": "Restauración protésica tras la cicatrización: corona, puente o prótesis sobre implantes, incluyendo casos con puentes en mal estado.",
+        "detail": "Corona, puente o prótesis"
       },
-      "emergency": {
-        "title": "Urgencias",
-        "description": "Diente roto, una restauración que se salió o dolor repentino: guardamos turnos libres todos los días.",
-        "detail": "Atención en el día"
+      "veneers": {
+        "title": "Carillas de porcelana",
+        "description": "Láminas finas y confeccionadas a medida que corrigen forma, espaciado y color preservando la mayor cantidad posible de estructura dentaria natural.",
+        "detail": "Habitualmente 2 a 3 visitas"
+      },
+      "smileDesign": {
+        "title": "Diseño de sonrisa",
+        "description": "Simulaciones digitales y análisis de proporción antes de cualquier preparación irreversible, para que pueda ver el resultado antes de decidir.",
+        "detail": "Previsualización previa"
+      },
+      "whitening": {
+        "title": "Blanqueamiento y estética restauradora",
+        "description": "Blanqueamiento en consultorio y supervisado en el hogar, calibrado a un tono realista y estable, más restauraciones adhesivas y coronas de zirconia ajustadas a las piezas vecinas.",
+        "detail": "Dosificado y supervisado"
       }
-    }
+    },
+    "note": "Un tratamiento estético que ignora la salud de las encías y la mecánica de la mordida tiende a envejecer mal. El Dr. Meta enseña en el Departamento de Periodoncia de USAL/AOA desde 2008 y es miembro de la Sociedad Argentina de Periodoncia, por lo que las decisiones de diseño de sonrisa consideran la línea de la encía, la salud de los tejidos y la estabilidad a largo plazo — no solo el color y la forma."
   },
   "about": {
     "eyebrow": "Sobre el Dr. Meta",
-    "title": "Un dentista para quienes preferirían estar en cualquier otro lado",
+    "title": "La trayectoria de un profesional, en detalle",
+    "lead": "Las credenciales importan cuando pueden verificarse. A continuación, el historial clínico, académico y científico completo — no un resumen.",
     "paragraphs": [
-      "El Dr. Isaac Fernando Meta lleva 18 años construyendo un consultorio alrededor de una idea: el miedo al dentista no es un problema que deba resolver el paciente, sino el odontólogo.",
-      "Eso define todo acá: turnos sin apuro, explicaciones claras antes de que pase cualquier cosa y técnicas de anestesia modernas que reducen la molestia al mínimo real.",
-      "Se formó en la Universidad de Buenos Aires y desde entonces completó certificaciones avanzadas en implantología y ortodoncia, con formación continua cada año en odontología digital y manejo del dolor."
+      "Desde 2007, el Dr. Meta dirige un consultorio privado en Buenos Aires enfocado en la colocación de implantes dentales, rehabilitación oral y odontología general, con una parte importante de pacientes expatriados angloparlantes. Desde 2008 es el odontólogo sugerido por la Embajada de los Estados Unidos en Argentina para ciudadanos norteamericanos y personal del Servicio Exterior destinado en el país. A lo largo de los años también atendió a diplomáticos de más de 10 países, una experiencia que amplió la perspectiva cultural que aporta a su práctica clínica. Su consultorio coordina directamente con varios de los principales seguros para expatriados e internacionales, y trabaja junto a dos ortodoncistas para planes de tratamiento combinados.",
+      "Antes de abrir su consultorio, el Dr. Meta fue investigador de posgrado becado durante tres años en The Ohio State University, donde su tesis de maestría caracterizó fenotipos óseos en mandíbulas de ratones con alta y baja densidad mineral ósea, bajo la dirección del Dr. Sarandeep Huja. Esa investigación produjo cinco artículos revisados por pares en revistas como Journal of Periodontology y Calcified Tissue International, además de catorce resúmenes presentados en congresos de Estados Unidos y Argentina entre 2000 y 2017 — incluyendo un ensayo clínico aleatorizado sobre protocolos analgésicos tras la colocación de implantes, publicado en Implant Dentistry en 2017. Se desempeñó además como revisor ad hoc para Journal of Periodontology y Orthodontics and Craniofacial Research.",
+      "El Dr. Meta enseñó a nivel de posgrado en Buenos Aires entre 2003 y 2023. Fue profesor titular de las Clínicas de Implantología Oral I a III en la Maestría en Implantología Oral de USAL/AOA entre 2012 y 2021, dirigió el programa de grado de Biofísica entre 2012 y 2016, y ocupó cargos docentes en el Departamento de Periodoncia entre 2008 y 2015. Dirigió dos tesis de maestría sobre regeneración ósea guiada y participó como miembro de otros tres jurados de tesis.",
+      "En 2008 tradujo del inglés al español capítulos de Clinical Periodontology and Implant Dentistry (Lindhe, Lang y Karring, 5ª edición) para Editorial Médica Panamericana. Es miembro de la Asociación Odontológica Argentina (AOA), la Sociedad Argentina de Periodoncia (SAP) y la International Association for Dental Research (IADR), y ha presentado investigaciones en español e inglés en congresos en Buenos Aires y en el Mallory-Coleman Resident Research Day de Ohio State."
     ],
     "values": {
-      "honest": {
-        "title": "Planes honestos",
-        "description": "Recibís todas las opciones con precios reales, incluida la opción de esperar. Acá no se vende nada."
+      "research": {
+        "title": "Basado en investigación",
+        "description": "Una tesis de maestría sobre cómo la densidad mineral ósea y la carga mecánica moldean la mandíbula — la misma biología que determina si un implante se integra."
       },
-      "gentle": {
-        "title": "Realmente sin dolor",
-        "description": "Anestesia moderna, ritmo sin apuro y una señal para que pares el tratamiento en cualquier momento."
+      "periodontal": {
+        "title": "Formación en periodoncia",
+        "description": "Las decisiones estéticas consideran la línea de la encía, la salud de los tejidos y la estabilidad a largo plazo, no solo el color y la forma."
       },
-      "modern": {
-        "title": "Tecnología actual",
-        "description": "Escaneo digital, imágenes 3D y coronas en el día: menos visitas y mejor ajuste."
+      "international": {
+        "title": "Pensado para pacientes internacionales",
+        "description": "Sugerido por la Embajada de EE.UU. desde 2008, coordinación directa con los principales seguros para expatriados, y diplomáticos de más de 10 países atendidos."
       }
     },
-    "portraitAlt": "Retrato del Dr. Isaac Fernando Meta"
+    "portraitAlt": "Marca del consultorio del Dr. Isaac Fernando Meta, DDS, MS",
+    "affiliation": "Consultorio privado · Palermo, Buenos Aires · Miembro del Consejo de Investigación de la Asociación Odontológica Argentina"
   },
   "process": {
-    "eyebrow": "Tu visita",
-    "title": "Cuatro pasos, sin sorpresas",
-    "lead": "Siempre sabés qué viene después, cuánto cuesta y por qué se recomienda.",
+    "eyebrow": "El tratamiento",
+    "title": "Qué incluye habitualmente el tratamiento con implantes",
+    "lead": "La secuencia siguiente es el recorrido habitual. Los tiempos dependen de la calidad ósea y de si se requiere injerto.",
     "steps": {
       "one": {
-        "title": "Escribinos",
-        "description": "Contanos por WhatsApp qué te está molestando. Respondemos el mismo día con opciones concretas de turno."
+        "title": "Consulta diagnóstica",
+        "description": "Un examen clínico con radiografía digital o, en la mayoría de los casos, una tomografía (CBCT) para evaluar el volumen y la densidad ósea antes de planificar cualquier paso quirúrgico."
       },
       "two": {
-        "title": "Diagnóstico completo",
-        "description": "Un examen de 45 minutos con escaneo digital y fotos. Te mostramos en pantalla exactamente lo que vemos."
+        "title": "Planificación",
+        "description": "Un implante, varios implantes o rehabilitación de boca completa — incluyendo injerto óseo o elevación de seno cuando las imágenes diagnósticas lo indican."
       },
       "three": {
-        "title": "Plan y presupuesto",
-        "description": "Un plan escrito con cada opción y su costo, dividido en etapas para que empieces por donde te convenga."
+        "title": "Colocación y cicatrización",
+        "description": "Colocación del implante bajo anestesia local, seguida del período de cicatrización y osteointegración. El manejo del dolor sigue la evidencia del propio ensayo publicado del Dr. Meta."
       },
       "four": {
-        "title": "Tratamiento y seguimiento",
-        "description": "Tratamiento sin apuro, un llamado de control después y un recordatorio cuando toque el próximo turno."
+        "title": "Restauración protésica",
+        "description": "Corona, puente o prótesis sobre implantes. Un caso simple de un solo implante va de la colocación a la restauración final en aproximadamente 3 a 6 meses."
       }
     }
   },
   "testimonials": {
-    "eyebrow": "Opiniones de pacientes",
-    "title": "Lo que dicen los pacientes al salir",
+    "eyebrow": "Opiniones",
+    "title": "Lo que dicen los pacientes",
+    "lead": "Comentarios de pacientes expatriados y locales, en implantes, estética y odontología general.",
+    "attribution": "Nombres e iniciales del apellido según los compartieron los pacientes.",
     "items": [
       {
-        "quote": "Había evitado al dentista durante once años. El Dr. Meta me explicó cada paso antes de tocar nada. Ya volví tres veces sin angustiarme.",
-        "name": "Carolina R.",
-        "role": "Paciente de implante y corona"
+        "quote": "El Dr. Isaac fue acogedor, tranquilizador y profesional. Fue un alivio acceder a atención odontológica sin tener que buscar por todos lados siendo una turista que no habla español, y le agradecí que me diera turno el mismo día.",
+        "name": "Sarina C.",
+        "role": "Paciente turista"
       },
       {
-        "quote": "Me mostró el escaneo 3D y me explicó por qué la opción más barata iba a fallar en dos años. Nadie me había dado el razonamiento antes. Seguí su plan y valió la pena.",
-        "name": "Daniel M.",
-        "role": "Rehabilitación completa"
+        "quote": "Otros dos dentistas en Palermo propusieron medidas drásticas de entrada. Me alegra haber buscado una tercera opinión — el Dr. Meta fue atento y cuidadoso, y se tomó el tiempo de explicarme todo con claridad y calma. Me sentí completamente informado antes de decidir.",
+        "name": "Albert W. D.",
+        "role": "Segunda opinión"
       },
       {
-        "quote": "Mi hija tiene trece años y les tiene terror a las agujas. Salió preguntando cuándo era el próximo turno. Con eso te digo todo.",
-        "name": "Sofía L.",
-        "role": "Madre de paciente de ortodoncia"
+        "quote": "Se me partió un diente durante las vacaciones. En la guardia de un hospital me dijeron que había que extraerlo, pero no lo hicieron. El Dr. Meta tomó mi caso en serio, lo examinó con cuidado y restauró el diente en lugar de extraerlo.",
+        "name": "Elena N. E.",
+        "role": "Urgencia odontológica"
       },
       {
-        "quote": "Me partí un molar un domingo. Escribí al WhatsApp y el lunes a las ocho ya tenía turno. Resuelto en una sesión, sin vueltas.",
-        "name": "Martín G.",
-        "role": "Paciente de urgencia"
+        "quote": "Una urgencia odontológica estando de viaje — diagnosticó una infección con una radiografía y empezó el tratamiento de conducto que necesitaba en la misma visita, explicándome cada paso. Después hizo seguimiento e incluso agendó una visita extra en su hora de almuerzo antes de que terminara mi viaje.",
+        "name": "Lorena S. F.",
+        "role": "Tratamiento de conducto"
+      },
+      {
+        "quote": "Agradecida por cómo trató mi urgencia odontológica mientras viajaba al exterior. El implante quedó colocado con precisión y mi recuperación fue completa en pocos días, con un llamado de seguimiento para ver cómo estaba.",
+        "name": "Tammy",
+        "role": "Implantes dentales"
+      },
+      {
+        "quote": "Muy buen profesional, cuidadoso durante todo el tratamiento y muy amable. Quedé muy satisfecha con el trabajo y lo recomiendo sin ninguna duda.",
+        "name": "Nora B.",
+        "role": "Odontología general"
       }
     ]
   },
   "faq": {
-    "eyebrow": "Preguntas",
-    "title": "Lo que nos preguntan antes de pedir turno",
+    "eyebrow": "Preguntas Frecuentes",
+    "title": "Preguntas frecuentes",
+    "lead": "Preguntas reales que hacen pacientes internacionales y locales antes de su primera visita.",
     "items": [
       {
-        "question": "¿Me va a doler?",
-        "answer": "Casi con seguridad mucho menos de lo que esperás. Usamos técnicas modernas de anestesia local, trabajamos sin apuro y tenés una señal con la mano para que paremos en cualquier momento. Si tenés miedo, avisanos al pedir el turno y planificamos una primera visita más larga y suave."
+        "question": "¿Habla inglés con fluidez, no solo frases básicas?",
+        "answer": "Sí. El Dr. Meta fue investigador de posgrado durante tres años en Columbus, Ohio, y atiende a expatriados angloparlantes desde 2007 — las consultas y la planificación del tratamiento se realizan en inglés clínico fluido."
       },
       {
-        "question": "¿Cuánto cuesta la primera consulta?",
-        "answer": "El diagnóstico completo (examen, escaneo digital y fotos) tiene un valor fijo que te informamos al reservar, sin adicionales. Te vas con un plan escrito y los precios, y no hay ninguna obligación de empezar el tratamiento."
+        "question": "¿Dónde está exactamente el consultorio?",
+        "answer": "El consultorio está en Av. R. Scalabrini Ortiz 2089, piso 8, Palermo, Buenos Aires (CABA), un barrio céntrico y de fácil acceso. Cómo llegar en la sección de contacto más abajo."
       },
       {
-        "question": "¿Trabajan con obras sociales y prepagas?",
-        "answer": "Trabajamos con la mayoría de las principales coberturas de Argentina y emitimos la documentación para pedir reintegros. Mandanos los datos de tu plan por WhatsApp y te confirmamos la cobertura antes de que vengas."
+        "question": "¿Puedo reservar un turno si estoy en Buenos Aires solo unos días?",
+        "answer": "Sí. Contacte al consultorio por email o WhatsApp con sus fechas, y se hará lo posible por coordinar turnos con poca anticipación, incluyendo atención de urgencia."
       },
       {
-        "question": "¿En cuánto tiempo me pueden atender?",
-        "answer": "Los turnos de rutina suelen estar disponibles en la misma semana. Además reservamos lugares para urgencias todos los días, así que los casos urgentes se atienden normalmente dentro de las 24 horas."
+        "question": "¿Trabajan directamente con seguros internacionales?",
+        "answer": "Sí, con coordinación directa para varios de los principales seguros para expatriados e internacionales. Para otros seguros, el consultorio entrega documentación detallada para reembolso fuera de red."
       },
       {
-        "question": "¿Qué idiomas se hablan en el consultorio?",
-        "answer": "El Dr. Meta y su equipo atienden en inglés, español y hebreo, así que podés hablar de tu tratamiento en el idioma en el que te sientas más cómodo."
+        "question": "¿El tratamiento en Buenos Aires es significativamente más económico que en EE.UU. o Europa?",
+        "answer": "En general los costos son menores que en EE.UU. o Europa Occidental para tratamientos comparables de implantes y estética, aunque el precio depende del plan específico — solicite un presupuesto por escrito luego de la consulta diagnóstica."
       },
       {
-        "question": "¿Puedo venir acompañado?",
-        "answer": "Siempre. Tu pareja, un amigo o un familiar puede quedarse en el consultorio durante todo el turno, y lo recomendamos si estás nervioso."
+        "question": "¿Cómo se planifica el tratamiento con implantes?",
+        "answer": "Con una consulta diagnóstica y, en la mayoría de los casos, una tomografía (CBCT) para evaluar el volumen y la densidad ósea antes de planificar cualquier paso quirúrgico."
+      },
+      {
+        "question": "¿Cuál es la formación específica del Dr. Meta en implantes?",
+        "answer": "Una Maestría en Biología Oral de Ohio State University con tesis sobre densidad ósea y estructura mandibular, cinco publicaciones revisadas por pares relacionadas, y un ensayo clínico aleatorizado de 2017 sobre manejo del dolor tras la colocación de implantes, publicado en Implant Dentistry. También tuvo más de 10 años de docencia en el departamento de Implantología de USAL/AOA y en la Cátedra de Periodoncia."
+      },
+      {
+        "question": "¿Puedo ver cómo quedará mi sonrisa antes de decidirme por las carillas?",
+        "answer": "Sí, mediante una simulación digital y un análisis de proporción antes de cualquier preparación irreversible del diente."
+      },
+      {
+        "question": "¿Las carillas son permanentes?",
+        "answer": "Las carillas requieren remover algo de esmalte y se consideran un tratamiento de largo plazo, no completamente reversible. El Dr. Meta explicará la durabilidad y las alternativas durante la consulta."
       }
-    ]
+    ],
+    "moreTitle": "¿No encontró su pregunta aquí?",
+    "moreCta": "Contactar al consultorio"
   },
   "contact": {
     "eyebrow": "Contacto",
-    "title": "Pedí tu turno",
-    "lead": "WhatsApp es la forma más rápida de contactarnos: los mensajes se responden en general dentro de un par de horas en horario de atención.",
+    "title": "Contáctenos",
+    "lead": "Email o WhatsApp son las formas más rápidas de comunicarse. Las consultas están disponibles en inglés y español.",
     "whatsapp": {
-      "label": "WhatsApp",
-      "cta": "Escribinos por WhatsApp",
+      "label": "Teléfono / WhatsApp",
+      "cta": "Escribir al consultorio por WhatsApp",
       "note": "Respuesta más rápida",
-      "prefill": "¡Hola! Quisiera pedir un turno con el Dr. Meta."
+      "prefill": "Hola Dr. Meta, quisiera solicitar una consulta."
     },
-    "phone": { "label": "Teléfono" },
-    "email": { "label": "Correo" },
-    "address": { "label": "Consultorio" },
-    "directions": "Cómo llegar",
+    "phone": { "label": "Teléfono / WhatsApp" },
+    "email": { "label": "Email" },
+    "address": { "label": "Ubicación" },
+    "directions": "Ver en Google Maps",
     "hours": {
-      "label": "Horarios de atención",
-      "weekdays": "Lunes a viernes",
-      "weekdaysValue": "9:00 - 19:00",
-      "saturday": "Sábado",
-      "saturdayValue": "9:00 - 13:00",
-      "sunday": "Domingo",
-      "sundayValue": "Solo urgencias"
+      "label": "Horario",
+      "value": "Con turno previo, lunes a viernes"
     },
     "form": {
-      "title": "O mandanos un mensaje",
-      "name": "Tu nombre",
-      "namePlaceholder": "Ana Pérez",
+      "title": "Enviar un mensaje",
+      "intro": "¿Prefiere email? Escriba directamente a la dirección de arriba, o use WhatsApp para una respuesta más rápida.",
+      "name": "Nombre completo",
+      "namePlaceholder": "Su nombre",
       "email": "Correo electrónico",
-      "emailPlaceholder": "ana.perez{'@'}ejemplo.com",
-      "reason": "¿En qué te podemos ayudar?",
-      "reasonPlaceholder": "Elegí una opción",
+      "emailPlaceholder": "usted{'@'}ejemplo.com",
+      "reason": "¿En qué podemos ayudarlo?",
+      "reasonPlaceholder": "Elija una opción",
       "reasonOptions": {
-        "checkup": "Control de rutina y limpieza",
-        "cosmetic": "Tratamiento estético",
-        "implants": "Implantes",
-        "orthodontics": "Ortodoncia",
-        "emergency": "Algo urgente",
+        "implants": "Implantes dentales",
+        "cosmetic": "Odontología estética",
+        "rehabilitation": "Rehabilitación oral",
+        "secondOpinion": "Segunda opinión",
+        "urgent": "Algo urgente",
         "other": "Otra cosa"
       },
       "message": "Mensaje",
-      "messagePlaceholder": "Contanos brevemente qué te pasa y en qué horarios estás disponible.",
-      "submit": "Enviar mensaje",
-      "sending": "Enviando...",
-      "success": "¡Gracias! Tu mensaje fue enviado. Te respondemos dentro de un día hábil.",
-      "demoNotice": "Formulario de demostración: no se envía ni se almacena ningún dato.",
+      "messagePlaceholder": "Cuéntenos brevemente qué necesita, y sus fechas si está de viaje.",
+      "submit": "Enviar por WhatsApp",
+      "sending": "Abriendo WhatsApp...",
+      "success": "WhatsApp debería haberse abierto con su mensaje listo para enviar.",
+      "demoNotice": "Este formulario abre WhatsApp con su mensaje precargado. No se almacena nada en este sitio.",
       "errors": {
-        "name": "Por favor, ingresá tu nombre.",
-        "email": "Por favor, ingresá un correo electrónico válido.",
-        "reason": "Por favor, elegí un motivo de consulta.",
-        "message": "Contanos brevemente qué necesitás."
+        "name": "Por favor, ingrese su nombre.",
+        "email": "Por favor, ingrese un correo electrónico válido.",
+        "reason": "Por favor, elija un motivo de consulta.",
+        "message": "Cuéntenos brevemente qué necesita."
       },
-      "summaryTitle": "Corregí lo siguiente antes de enviar:"
+      "summaryTitle": "Corrija lo siguiente antes de enviar:"
     }
   },
   "footer": {
-    "tagline": "Odontología moderna y sin dolor en el corazón de Buenos Aires.",
+    "tagline": "Consultorio privado en Palermo, Buenos Aires. Implantes dentales, rehabilitación oral y odontología estética.",
     "navTitle": "Secciones",
     "contactTitle": "Contacto",
-    "legalTitle": "Legales",
-    "privacy": "Política de privacidad",
-    "terms": "Términos del servicio",
-    "accessibility": "Declaración de accesibilidad",
-    "rights": "Todos los derechos reservados.",
-    "licence": "Matrícula n.º 12345 — Asociación Odontológica Argentina"
+    "rights": "Todos los derechos reservados."
   }
 }

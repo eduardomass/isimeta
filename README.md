@@ -1,8 +1,9 @@
-# Dr. Isaac Fernando Meta, DDS — Practice Website
+# Isaac F. Meta, DDS, MS — Practice Website
 
-Trilingual (English / Spanish / Hebrew) marketing site for a dental practice,
-built with Vue 3 and Vite. English is the default locale; Hebrew renders
-right-to-left.
+Trilingual (English / Spanish / Hebrew) single-page site for a dental practice in
+Palermo, Buenos Aires, focused on dental implants, oral rehabilitation and
+cosmetic dentistry. Built with Vue 3 and Vite. English is the default locale;
+Hebrew renders right-to-left.
 
 ## Getting started
 
@@ -41,13 +42,13 @@ src/
     SiteHeader.vue         sticky nav + mobile panel
     LanguageSwitcher.vue   EN / ES / HE menu, sets <html lang> and dir
     HeroSection.vue
-    TrustSection.vue       stats + credentials
-    ServicesSection.vue    six treatments
-    AboutSection.vue
-    ProcessSection.vue     four-step visit timeline
-    TestimonialsSection.vue accessible carousel
+    TrustSection.vue       stats, credentials, languages
+    ServicesSection.vue    six treatments + periodontal-health note
+    AboutSection.vue       clinical, research, teaching record
+    ProcessSection.vue     four-step implant treatment path
+    TestimonialsSection.vue accessible carousel of real reviews
     FaqSection.vue         native <details> accordion
-    ContactSection.vue     WhatsApp, details, hours, validated form
+    ContactSection.vue     WhatsApp, details, hours, form -> WhatsApp
     SiteFooter.vue
     WhatsappFab.vue        floating CTA, appears past the hero
   composables/useReveal.js IntersectionObserver scroll reveal
@@ -114,22 +115,23 @@ and inherit the paragraph's RTL direction:
 
 | Stored | Rendered in Hebrew, unisolated |
 | --- | --- |
-| `9:00 - 19:00` | `19:00 - 9:00` |
-| `18+` | `+18` |
-| `+54 9 11 5555-555` | `5555-555 11 9 54+` |
-| `© 2026 Dr. Isaac Fernando Meta.` | `.Dr. Isaac Fernando Meta 2026 ©` |
+| `2003–2023` | `2023–2003` |
+| `Sarina C.` | `.Sarina C` |
+| `+54 9 11 3050-1028` | `1028-3050 11 9 54+` |
+| `© 2026 Isaac F. Meta, DDS, MS.` | `.Isaac F. Meta, DDS, MS 2026 ©` |
 
 So **wrap every untranslated value in `<bdi>`** — phone numbers, times, stat
 figures, addresses, the doctor's Latin name, the copyright line.
 
 Use `<bdi>` rather than `dir="ltr"`. `<bdi>` defaults to `dir="auto"`, so it
-resolves per value: a time range stays LTR, but if `contact.hours.sundayValue`
-("Emergencies only") is translated to Hebrew, the same markup renders it RTL.
+resolves per value: a date range or reviewer name stays LTR, but if
+`contact.hours.value` is translated to Hebrew, the same markup renders it RTL.
 Hardcoding `dir="ltr"` would break that. `<bdi>` is inline, so the block's own
 `text-align: start` still mirrors normally.
 
-Only three locale strings currently reorder — the two hour ranges and `18+` —
-but the audit is worth rerunning after editing locales or `src/data/site.js`:
+Of the Hebrew locale's 13 Latin-only strings, six reorder: `2003–2023` and the
+five reviewer names ending in a period. All are wrapped. Rerun the audit after
+editing locales or `src/data/site.js`:
 
 ```bash
 pip install python-bidi
@@ -213,20 +215,54 @@ never parses the Vite config. This was confirmed by bisecting the config —
 So: **do not delete `wrangler.jsonc`**, and if you ever see that parse error
 again, check that it is still being found from the build's working directory.
 
-## Before going live
+## Content provenance
 
-These are deliberate placeholders, not oversights:
+All copy, credentials, treatment descriptions, reviews and contact details come
+from the practice's existing site (`C:/Desarr/isi2`), using the `en/` and `es/`
+wording directly rather than a re-translation:
 
-1. **WhatsApp number** — `src/data/site.js` holds `549115555555`, supplied as a
-   stand-in. Note it is one digit short of a complete Argentine mobile number
-   (`+54 9 11` + 8 digits), so `wa.me` will reject it until replaced.
-2. **Contact form** — has no backend. `onSubmit` simulates a 700 ms round trip
-   and shows the success state; wire it to a real endpoint or form service.
-3. **Practice details** — address, email, licence number, opening hours, social
-   links and the stats in `trust.stats` are sample content.
-4. **Testimonials** — sample text. Published reviews must be real and
-   attributable.
-5. **Imagery** — the hero and portrait are CSS compositions rather than photos,
-   so nothing implies a likeness of a real person. Replace with real photography
+| Section | Source page |
+| --- | --- |
+| Hero, About, Trust (credentials, languages) | `about.html` |
+| Treatments (implants, grafting, rehabilitation) | `dental-implants.html` |
+| Treatments (veneers, smile design, whitening) | `cosmetic-dentistry.html` |
+| Treatment path | `dental-implants.html` — "what treatment involves" |
+| Reviews | `reviews.html` |
+| FAQ | `faq.html` |
+| Contact, hours, address | `contact.html` |
+
+Hebrew is translated from those sources. The practice states consultations are
+available in **English and Spanish**; Hebrew is listed at intermediate
+proficiency, so the Hebrew locale must not claim clinical consultations in
+Hebrew.
+
+### Claims deliberately not made
+
+The earlier placeholder build asserted things the real site does not support.
+They were removed rather than carried over:
+
+- **No aggregate rating.** The practice publishes individual reviews but no
+  star average, so the hero shows the credential instead of a score.
+- **No opening times.** The source says only "by appointment, Monday to
+  Friday", so there is no timetable and the JSON-LD carries `openingHours:
+  'Mo-Fr'` with no `opens`/`closes`.
+- **No patient counts or licence number.** Trust figures are limited to
+  verifiable facts: practice founded 2007, Embassy-suggested since 2008, five
+  peer-reviewed publications, teaching 2003–2023.
+- **No social profiles.** None are listed on the source site, so the footer
+  links were removed rather than pointed at generic URLs.
+
+## Still to confirm before launch
+
+1. **Contact form** has no backend. It composes the enquiry and opens WhatsApp
+   with the message prefilled, which matches the source site's "Send via
+   WhatsApp" behaviour. Nothing is stored.
+2. **Imagery.** The hero and About visuals are CSS compositions, not
+   photographs, so nothing implies a likeness. Replace with real photography
    (set explicit `width`/`height` to preserve CLS).
-6. **Legal pages** — footer legal links currently point at `#contact`.
+3. **Pages not pulled from.** `international-patients.html`,
+   `digital-dentistry.html`, `treatments.html` and `index.html` exist in the
+   source site and were not used. Digital dentistry in particular is a
+   treatment area this build does not mention.
+4. **Legal pages.** There are none on the source site, so the footer has no
+   privacy/terms links.

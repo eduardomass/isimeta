@@ -19,6 +19,7 @@ const items = computed(() =>
       <header class="section__header reveal">
         <span class="section__eyebrow">{{ t('faq.eyebrow') }}</span>
         <h2 id="faq-title" class="section__title">{{ t('faq.title') }}</h2>
+        <p class="section__lead">{{ t('faq.lead') }}</p>
       </header>
 
       <!--
@@ -42,6 +43,11 @@ const items = computed(() =>
           </details>
         </li>
       </ul>
+
+      <div class="faq__more reveal">
+        <p class="faq__more-title">{{ t('faq.moreTitle') }}</p>
+        <a class="btn btn--ghost" href="#contact">{{ t('faq.moreCta') }}</a>
+      </div>
     </div>
   </section>
 </template>
@@ -120,6 +126,19 @@ const items = computed(() =>
   color: var(--color-muted-foreground);
   line-height: var(--leading-relaxed);
   font-size: var(--text-sm);
+}
+
+.faq__more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2xs);
+  margin-block-start: var(--space-xl);
+  text-align: center;
+}
+
+.faq__more-title {
+  font-weight: var(--weight-semibold);
 }
 
 @media (min-width: 768px) {

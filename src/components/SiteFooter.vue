@@ -14,13 +14,6 @@ const NAV_ITEMS = [
   { id: 'contact', key: 'nav.contact' },
 ]
 
-const LEGAL_ITEMS = ['privacy', 'terms', 'accessibility']
-
-const SOCIALS = [
-  { key: 'instagram', icon: 'instagram', href: site.social.instagram, label: 'Instagram' },
-  { key: 'facebook', icon: 'facebook', href: site.social.facebook, label: 'Facebook' },
-]
-
 const year = new Date().getFullYear()
 </script>
 
@@ -33,19 +26,11 @@ const year = new Date().getFullYear()
             <AppIcon name="tooth" :size="22" />
           </span>
           <span>
-            <strong><bdi>Dr. {{ site.doctor.fullName }}</bdi></strong>
+            <strong><bdi>{{ site.doctor.shortName }}</bdi></strong>
             <span class="footer__credential"><bdi>{{ site.doctor.credential }}</bdi></span>
           </span>
         </a>
         <p class="footer__tagline">{{ t('footer.tagline') }}</p>
-
-        <ul class="footer__socials">
-          <li v-for="social in SOCIALS" :key="social.key">
-            <a class="footer__social" :href="social.href" target="_blank" rel="noopener noreferrer">
-              <AppIcon :name="social.icon" :size="18" :label="social.label" />
-            </a>
-          </li>
-        </ul>
       </div>
 
       <nav class="footer__col" :aria-label="t('footer.navTitle')">
@@ -71,26 +56,20 @@ const year = new Date().getFullYear()
           <li>
             <address class="footer__address">
               <bdi>{{ site.address.street }}</bdi><br />
+              <bdi>{{ site.address.neighbourhood }}</bdi><br />
               <bdi>{{ site.address.city }}, {{ site.address.country }}</bdi>
             </address>
           </li>
         </ul>
       </div>
 
-      <div class="footer__col">
-        <h2 class="footer__col-title">{{ t('footer.legalTitle') }}</h2>
-        <ul class="footer__list">
-          <li v-for="item in LEGAL_ITEMS" :key="item">
-            <!-- Placeholder targets: point these at real pages before launch. -->
-            <a class="footer__link" href="#contact">{{ t(`footer.${item}`) }}</a>
-          </li>
-        </ul>
-      </div>
     </div>
 
     <div class="container footer__bottom">
-      <p><bdi>&copy; {{ year }} Dr. {{ site.doctor.fullName }}</bdi>. {{ t('footer.rights') }}</p>
-      <p class="footer__licence">{{ t('footer.licence') }}</p>
+      <p>
+        <bdi>&copy; {{ year }} {{ site.doctor.shortName }}, {{ site.doctor.credential }}</bdi>.
+        {{ t('footer.rights') }}
+      </p>
     </div>
   </footer>
 </template>
@@ -146,26 +125,6 @@ const year = new Date().getFullYear()
   line-height: var(--leading-normal);
   max-width: 34ch;
   margin-block-end: var(--space-md);
-}
-
-.footer__socials {
-  display: flex;
-  gap: var(--space-2xs);
-}
-
-.footer__social {
-  display: grid;
-  place-items: center;
-  inline-size: 44px;
-  block-size: 44px;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--color-border-strong);
-  color: var(--color-primary-deep);
-  transition: background-color var(--dur-base) var(--ease-out);
-}
-
-.footer__social:hover {
-  background-color: var(--color-primary-soft);
 }
 
 /* ---- Link columns ---- */
@@ -228,7 +187,7 @@ const year = new Date().getFullYear()
 
 @media (min-width: 1024px) {
   .footer__inner {
-    grid-template-columns: 1.6fr 1fr 1.2fr 1fr;
+    grid-template-columns: 1.7fr 1fr 1.3fr;
     gap: var(--space-2xl);
   }
 }

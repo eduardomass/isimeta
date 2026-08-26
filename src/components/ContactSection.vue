@@ -8,7 +8,7 @@ const { t } = useI18n()
 
 const bookUrl = computed(() => whatsappUrl(t('contact.whatsapp.prefill')))
 
-const REASONS = ['checkup', 'cosmetic', 'implants', 'orthodontics', 'emergency', 'other']
+const REASONS = ['implants', 'cosmetic', 'rehabilitation', 'secondOpinion', 'urgent', 'other']
 
 const form = reactive({ name: '', email: '', reason: '', message: '' })
 const errors = reactive({ name: '', email: '', reason: '', message: '' })
@@ -49,9 +49,21 @@ async function onSubmit() {
   }
 
   submitting.value = true
-  // No backend is wired up: this simulates the round trip so the success and
-  // pending states are reviewable. Point it at a real endpoint before launch.
-  await new Promise((resolve) => setTimeout(resolve, 700))
+
+  // There is no backend, and the practice takes enquiries over WhatsApp. Rather
+  // than fake a submission, hand the composed message to WhatsApp so the
+  // patient can send it themselves and keeps a copy in their own thread.
+  const reasonLabel = t(`contact.form.reasonOptions.${form.reason}`)
+  const summary = `${t('contact.whatsapp.prefill')}
+
+${t('contact.form.name')}: ${form.name.trim()}
+${t('contact.form.email')}: ${form.email.trim()}
+${t('contact.form.reason')} ${reasonLabel}
+
+${form.message.trim()}`
+
+  window.open(whatsappUrl(summary), '_blank', 'noopener,noreferrer')
+
   submitting.value = false
   submitted.value = true
   Object.assign(form, { name: '', email: '', reason: '', message: '' })
@@ -107,6 +119,7 @@ const CONTACT_ROWS = [
                 <span class="contact__row-label">{{ t('contact.address.label') }}</span>
                 <address class="contact__address">
                   <bdi>{{ site.address.street }}</bdi><br />
+                  <bdi>{{ site.address.neighbourhood }}</bdi><br />
                   <bdi>{{ site.address.city }}, {{ site.address.country }}</bdi>
                 </address>
                 <a
@@ -128,18 +141,14 @@ const CONTACT_ROWS = [
               <AppIcon name="clock" :size="18" class="contact__hours-icon" />
               {{ t('contact.hours.label') }}
             </h3>
-            <dl class="contact__hours-list">
-              <div v-for="day in ['weekdays', 'saturday', 'sunday']" :key="day" class="contact__hours-row">
-                <dt>{{ t(`contact.hours.${day}`) }}</dt>
-                <dd><bdi>{{ t(`contact.hours.${day}Value`) }}</bdi></dd>
-              </div>
-            </dl>
+            <p class="contact__hours-value">{{ t('contact.hours.value') }}</p>
           </div>
         </div>
 
         <!-- ============ Form column ============ -->
         <div class="card contact__form-card reveal">
           <h3 class="contact__form-title">{{ t('contact.form.title') }}</h3>
+          <p class="contact__form-intro">{{ t('contact.form.intro') }}</p>
           <p class="contact__demo">
             <AppIcon name="alert" :size="15" class="contact__demo-icon" />
             <span>{{ t('contact.form.demoNotice') }}</span>
@@ -251,8 +260,10 @@ const CONTACT_ROWS = [
               <p v-if="errors.message" id="error-message" class="form__error">{{ errors.message }}</p>
             </div>
 
-            <button type="submit" class="btn btn--primary form__submit" :disabled="submitting">
+            <button type="submit" class="btn btn--accent form__submit" :disabled="submitting">
+              <AppIcon name="whatsapp" :size="18" class="btn__icon" />
               <span>{{ submitting ? t('contact.form.sending') : t('contact.form.submit') }}</span>
+              <span class="sr-only">{{ t('a11y.whatsappNew') }}</span>
             </button>
           </form>
         </div>
@@ -432,33 +443,9 @@ const CONTACT_ROWS = [
   flex-shrink: 0;
 }
 
-.contact__hours-list {
-  display: grid;
-  gap: var(--space-3xs);
-}
-
-.contact__hours-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--space-2xs);
+.contact__hours-value {
   font-size: var(--text-sm);
-  padding-block: var(--space-3xs);
-  border-block-end: 1px dashed var(--color-border);
-}
-
-.contact__hours-row:last-child {
-  border-block-end: none;
-}
-
-.contact__hours-row dt {
-  color: var(--color-muted-foreground);
-}
-
-.contact__hours-row dd {
   font-weight: var(--weight-semibold);
-  font-variant-numeric: tabular-nums;
-  text-align: end;
 }
 
 /* ============ Form ============ */
@@ -468,6 +455,13 @@ const CONTACT_ROWS = [
 
 .contact__form-title {
   font-size: var(--text-xl);
+  margin-block-end: var(--space-2xs);
+}
+
+.contact__form-intro {
+  font-size: var(--text-sm);
+  color: var(--color-muted-foreground);
+  line-height: var(--leading-normal);
   margin-block-end: var(--space-2xs);
 }
 

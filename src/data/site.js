@@ -1,38 +1,39 @@
 /**
- * Single source of truth for contact + practice details.
+ * Single source of truth for practice details.
  * Kept out of the locale files so a number is never updated in only one language.
+ *
+ * All values below are the real practice details taken from the existing site.
  */
 
-// Placeholder number supplied by the client — replace before going live.
-const WHATSAPP_DIGITS = '549115555555'
+const WHATSAPP_DIGITS = '5491130501028'
 
 export const site = {
   doctor: {
     fullName: 'Isaac Fernando Meta',
-    credential: 'DDS',
+    /** The form used as the practice's brand mark. */
+    shortName: 'Isaac F. Meta',
+    credential: 'DDS, MS',
   },
   whatsapp: {
     digits: WHATSAPP_DIGITS,
-    display: '+54 9 11 5555-555',
+    display: '+54 9 11 3050-1028',
     link: `https://wa.me/${WHATSAPP_DIGITS}`,
   },
   phone: {
-    display: '+54 9 11 5555-555',
+    display: '+54 9 11 3050-1028',
     link: `tel:+${WHATSAPP_DIGITS}`,
   },
   email: {
-    address: 'hello@drmeta.dental',
-    link: 'mailto:hello@drmeta.dental',
+    address: 'isaac.meta@gmail.com',
+    link: 'mailto:isaac.meta@gmail.com',
   },
   address: {
-    street: 'Av. Santa Fe 1234, Piso 5',
+    street: 'Av. R. Scalabrini Ortiz 2089, piso 8',
+    neighbourhood: 'Palermo, C.A.B.A.',
     city: 'Buenos Aires',
     country: 'Argentina',
-    mapsLink: 'https://maps.google.com/?q=Av.+Santa+Fe+1234+Buenos+Aires',
-  },
-  social: {
-    instagram: 'https://instagram.com/',
-    facebook: 'https://facebook.com/',
+    mapsLink:
+      'https://maps.google.com/?q=Av.+R.+Scalabrini+Ortiz+2089,+Palermo,+Buenos+Aires,+Argentina',
   },
 }
 

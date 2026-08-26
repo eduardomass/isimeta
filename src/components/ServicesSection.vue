@@ -5,12 +5,12 @@ import AppIcon from './AppIcon.vue'
 const { t } = useI18n()
 
 const SERVICES = [
-  { key: 'preventive', icon: 'shield' },
-  { key: 'cosmetic', icon: 'sparkles' },
   { key: 'implants', icon: 'tooth' },
-  { key: 'orthodontics', icon: 'braces' },
-  { key: 'endodontics', icon: 'scan' },
-  { key: 'emergency', icon: 'alert' },
+  { key: 'grafting', icon: 'scan' },
+  { key: 'rehabilitation', icon: 'braces' },
+  { key: 'veneers', icon: 'sparkles' },
+  { key: 'smileDesign', icon: 'heart' },
+  { key: 'whitening', icon: 'shield' },
 ]
 </script>
 
@@ -38,6 +38,11 @@ const SERVICES = [
           </article>
         </li>
       </ul>
+
+      <aside class="services__note reveal">
+        <AppIcon name="shield" :size="20" class="services__note-icon" />
+        <p>{{ t('services.note') }}</p>
+      </aside>
     </div>
   </section>
 </template>
@@ -98,6 +103,30 @@ const SERVICES = [
 
 .services__detail-icon {
   flex-shrink: 0;
+}
+
+.services__note {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-block-start: var(--space-xl);
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary-soft);
+  border: 1px solid var(--color-border-strong);
+}
+
+.services__note-icon {
+  flex-shrink: 0;
+  margin-block-start: 0.15em;
+  color: var(--color-primary-deep);
+}
+
+.services__note p {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-foreground);
+  max-width: 90ch;
 }
 
 @media (min-width: 640px) {

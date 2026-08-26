@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Dr. Isaac Fernando Meta, DDS — Modern Dental Care",
-    "description": "Gentle, modern dentistry in Buenos Aires. Implants, orthodontics, cosmetic and preventive care from Dr. Isaac Fernando Meta, DDS."
+    "title": "Isaac F. Meta, DDS, MS — Dental Implants & Cosmetic Dentistry, Buenos Aires",
+    "description": "Private practice in Palermo, Buenos Aires, focused on dental implants, oral rehabilitation and cosmetic dentistry. U.S. Embassy–suggested dentist since 2008. Consultations in English and Spanish."
   },
   "a11y": {
     "skipToContent": "Skip to main content",
@@ -10,253 +10,286 @@
     "currentLanguage": "Current language",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "previousTestimonial": "Previous testimonial",
-    "nextTestimonial": "Next testimonial",
-    "pauseTestimonials": "Pause testimonial rotation",
-    "playTestimonials": "Resume testimonial rotation",
-    "slidePosition": "Testimonial {current} of {total}",
+    "previousTestimonial": "Previous review",
+    "nextTestimonial": "Next review",
+    "pauseTestimonials": "Pause review rotation",
+    "playTestimonials": "Resume review rotation",
+    "slidePosition": "Review {current} of {total}",
     "whatsappNew": "Opens WhatsApp in a new tab",
     "externalLink": "Opens in a new tab"
   },
   "nav": {
-    "services": "Services",
-    "about": "About",
-    "process": "Your visit",
+    "services": "Treatments",
+    "about": "Dr. Meta",
+    "process": "Treatment path",
     "testimonials": "Reviews",
     "faq": "FAQ",
     "contact": "Contact",
-    "book": "Book a visit"
+    "book": "Request a consultation"
   },
   "hero": {
-    "badge": "Accepting new patients",
-    "title": "Dentistry that feels calm, careful and completely yours",
-    "subtitle": "Dr. Isaac Fernando Meta and his team combine 18 years of clinical experience with modern, low-pain technique — so your visit is something you can actually look forward to.",
-    "ctaPrimary": "Book on WhatsApp",
-    "ctaSecondary": "Explore treatments",
-    "reassurance": "Same-week appointments · Emergency slots kept open daily",
-    "imageAlt": "Dr. Isaac Fernando Meta in his dental practice"
+    "badge": "U.S. Embassy–suggested dentist since 2008",
+    "title": "Implant dentistry planned by someone who studied how bone behaves under load",
+    "subtitle": "Private practice in Palermo, Buenos Aires, focused on dental implants, oral rehabilitation and cosmetic dentistry — with a research background in bone biology behind every treatment decision.",
+    "ctaPrimary": "Request a consultation",
+    "ctaSecondary": "See treatments",
+    "reassurance": "Consultations in English and Spanish · By appointment, Monday to Friday",
+    "imageAlt": "Credentials of Dr. Isaac Fernando Meta, DDS, MS",
+    "card": {
+      "credential": "DDS, MS",
+      "institutions": "University of Buenos Aires · The Ohio State University"
+    }
   },
   "trust": {
-    "title": "Care you can measure",
+    "title": "A verifiable record",
     "stats": {
-      "years": { "value": "18+", "label": "Years in practice" },
-      "patients": { "value": "6,400", "label": "Patients treated" },
-      "rating": { "value": "4.9/5", "label": "Average patient rating" },
-      "implants": { "value": "1,200", "label": "Implants placed" }
+      "practice": { "value": "2007", "label": "Private practice in Palermo since" },
+      "embassy": { "value": "2008", "label": "U.S. Embassy–suggested dentist since" },
+      "papers": { "value": "5", "label": "Peer-reviewed publications" },
+      "teaching": { "value": "2003–2023", "label": "Postgraduate teaching in Buenos Aires" }
     },
     "credentials": {
-      "title": "Credentials and memberships",
+      "title": "Academic and professional record",
       "items": [
-        "DDS — University of Buenos Aires, School of Dentistry",
-        "Certified Implantologist, Argentine Society of Implantology",
-        "Postgraduate in Orthodontics and Dentofacial Orthopedics",
-        "Member, Argentine Dental Association"
+        "1999–2002 — Predoctoral training, School of Dentistry, University of Buenos Aires",
+        "2002 — Doctor of Dental Surgery, UBA. 9th highest GPA, class of 252",
+        "2004–2007 — Graduate Research Fellow, The Ohio State University",
+        "2007 — MS in Oral Biology, Ohio State University College of Dentistry",
+        "2007 / 2021 — National Board Dental Examination, Parts I & II (USA)",
+        "2008–present — U.S. Embassy–suggested dentist in Argentina",
+        "2012–present — Research Board, Argentine Dental Association"
       ]
+    },
+    "languages": {
+      "title": "Languages",
+      "items": ["English — Advanced", "Spanish — Native", "Hebrew — Intermediate"]
     }
   },
   "services": {
     "eyebrow": "Treatments",
-    "title": "Everything your smile needs, under one roof",
-    "lead": "From a routine cleaning to full mouth restoration, treatment is planned in one place — no bouncing between clinics.",
+    "title": "Implants, rehabilitation and cosmetic work in one practice",
+    "lead": "Two treatment pillars: implant dentistry grounded in bone biology research, and aesthetic work planned by a periodontally-trained clinician so the result holds up structurally.",
     "items": {
-      "preventive": {
-        "title": "Preventive care",
-        "description": "Cleanings, sealants, fluoride and early-detection screening to stop problems before they start.",
-        "detail": "45-minute appointment"
-      },
-      "cosmetic": {
-        "title": "Cosmetic dentistry",
-        "description": "Whitening, porcelain veneers and composite bonding designed around your face, not a template.",
-        "detail": "Digital preview first"
-      },
       "implants": {
         "title": "Dental implants",
-        "description": "Guided implant surgery with 3D planning for a natural bite and a permanent result.",
-        "detail": "3D-planned placement"
+        "description": "Single implants, multiple implants or full-arch rehabilitation, planned from digital radiography or a CBCT scan and placed under local anaesthesia.",
+        "detail": "CBCT-planned"
       },
-      "orthodontics": {
-        "title": "Orthodontics",
-        "description": "Clear aligners and modern low-profile braces for teens and adults, with progress you can see.",
-        "detail": "Aligners or fixed braces"
+      "grafting": {
+        "title": "Bone grafting & sinus lift",
+        "description": "Performed when the diagnostic imaging indicates it is needed — a conservative, evidence-based call on grafting and healing timelines rather than a default step.",
+        "detail": "Only when imaging indicates"
       },
-      "endodontics": {
-        "title": "Root canal therapy",
-        "description": "Microscope-assisted endodontics that saves the natural tooth, usually in one comfortable session.",
-        "detail": "Often one session"
+      "rehabilitation": {
+        "title": "Oral rehabilitation",
+        "description": "Prosthetic restoration after healing: crown, bridge or implant-supported denture, including cases with failing bridgework.",
+        "detail": "Crown, bridge or denture"
       },
-      "emergency": {
-        "title": "Emergency care",
-        "description": "Broken tooth, lost filling or sudden pain — we keep slots open every day for urgent cases.",
-        "detail": "Same-day availability"
+      "veneers": {
+        "title": "Porcelain veneers",
+        "description": "Thin, custom-fabricated shells that correct shape, spacing and colour while preserving as much natural tooth structure as possible.",
+        "detail": "Typically 2 to 3 visits"
+      },
+      "smileDesign": {
+        "title": "Smile design",
+        "description": "Digital mock-ups and proportion analysis before any irreversible preparation, so you can preview the result before deciding.",
+        "detail": "Preview before preparation"
+      },
+      "whitening": {
+        "title": "Whitening & restorative aesthetics",
+        "description": "In-office and supervised take-home whitening calibrated to a realistic, stable shade, plus tooth-coloured bonding and zirconia crown work matched to adjacent teeth.",
+        "detail": "Dosed and supervised"
       }
-    }
+    },
+    "note": "Aesthetic treatment that ignores gum health and bite mechanics tends to age poorly. Dr. Meta has taught in the Department of Periodontology at USAL/AOA since 2008 and is a member of the Argentine Society of Periodontology, so smile design decisions account for gum line, tissue health and long-term stability — not only shade and shape."
   },
   "about": {
     "eyebrow": "About Dr. Meta",
-    "title": "A dentist for people who would rather be anywhere else",
+    "title": "A clinician's background, in detail",
+    "lead": "Credentials matter most when they are verifiable. Below is the clinical, research and teaching record — not a summary.",
     "paragraphs": [
-      "Dr. Isaac Fernando Meta has spent 18 years building a practice around one idea: dental anxiety is not the patient's problem to solve. It is the dentist's.",
-      "That shapes everything here — from unhurried appointments and clear explanations before anything happens, to modern anaesthetic technique that keeps discomfort genuinely minimal.",
-      "He trained at the University of Buenos Aires and has since completed advanced certification in implantology and orthodontics, with continuing education every year in digital dentistry and pain management."
+      "Since 2007, Dr. Meta has run a private practice in Buenos Aires focused on dental implant placement, oral rehabilitation and general dentistry, with a significant share of English-speaking expatriate patients. Since 2008 he has been the suggested dentist of the U.S. Embassy in Argentina for U.S. citizens and Foreign Service personnel stationed in the country. Over the years he has also treated diplomats from more than 10 countries, an experience that has broadened the cultural perspective he brings to his clinical practice. His office coordinates directly with several major expatriate and international insurance providers, and works alongside two orthodontists for combined treatment plans.",
+      "Before opening his practice, Dr. Meta spent three years as a fully-funded graduate researcher at The Ohio State University, where his MS thesis characterized bone phenotypes in the mandibles of high and low bone-mineral-density mice, advised by Dr. Sarandeep Huja. That research produced five peer-reviewed papers in journals including the Journal of Periodontology and Calcified Tissue International, and a further fourteen conference abstracts presented in the U.S. and Argentina between 2000 and 2017 — including a randomized controlled trial on analgesic protocols after dental implant placement, published in Implant Dentistry in 2017. He has served as an ad hoc reviewer for the Journal of Periodontology and Orthodontics and Craniofacial Research.",
+      "Dr. Meta taught at the postgraduate level in Buenos Aires from 2003 to 2023. He chaired Oral Implantology Clinics I–III in the MS in Oral Implantology program at USAL/AOA from 2012 to 2021, directed the predoctoral Biophysics program from 2012 to 2016, and held teaching roles in the Department of Periodontology from 2008 to 2015. He has supervised two completed MS theses on guided bone regeneration and served on three additional thesis committees.",
+      "In 2008 he translated chapters of Clinical Periodontology and Implant Dentistry (Lindhe, Lang & Karring, 5th edition) from English to Spanish for Editorial Médica Panamericana. He is a member of the Argentine Dental Association (AOA), the Argentine Society of Periodontology (SAP) and the International Association for Dental Research (IADR), and has presented research in both Spanish and English at meetings in Buenos Aires and at Ohio State's Mallory-Coleman Resident Research Day."
     ],
     "values": {
-      "honest": {
-        "title": "Honest treatment plans",
-        "description": "You get every option with real prices, including the option to wait. Nothing is sold to you."
+      "research": {
+        "title": "Grounded in research",
+        "description": "An MS thesis on how bone mineral density and mechanical loading shape the mandible — the same biology that determines whether an implant integrates."
       },
-      "gentle": {
-        "title": "Genuinely gentle",
-        "description": "Modern anaesthesia, unhurried pacing and a stop signal you can use at any moment."
+      "periodontal": {
+        "title": "Periodontally trained",
+        "description": "Aesthetic decisions account for gum line, tissue health and long-term stability, not only shade and shape."
       },
-      "modern": {
-        "title": "Modern technology",
-        "description": "Digital scanning, 3D imaging and same-day crowns — fewer visits, better fit."
+      "international": {
+        "title": "Built for international patients",
+        "description": "U.S. Embassy–suggested since 2008, direct coordination with major expatriate insurers, and diplomats from more than 10 countries treated."
       }
     },
-    "portraitAlt": "Portrait of Dr. Isaac Fernando Meta"
+    "portraitAlt": "Practice mark of Dr. Isaac Fernando Meta, DDS, MS",
+    "affiliation": "Private practice · Palermo, Buenos Aires · Member, Research Board of the Argentine Dental Association"
   },
   "process": {
-    "eyebrow": "Your visit",
-    "title": "Four steps, no surprises",
-    "lead": "You always know what happens next, what it costs, and why it is being recommended.",
+    "eyebrow": "Treatment path",
+    "title": "What implant treatment typically involves",
+    "lead": "The sequence below is the standard path. Timelines depend on bone quality and whether grafting is required.",
     "steps": {
       "one": {
-        "title": "Say hello",
-        "description": "Message us on WhatsApp with what is bothering you. We reply the same day with real appointment options."
+        "title": "Diagnostic consultation",
+        "description": "A clinical exam with digital radiography or, in most cases, a CBCT scan to evaluate bone volume and density before any surgical step is planned."
       },
       "two": {
-        "title": "Full assessment",
-        "description": "A 45-minute exam with digital scans and photos. We show you exactly what we see on screen."
+        "title": "Treatment planning",
+        "description": "A single implant, multiple implants or full-arch rehabilitation — including bone grafting or a sinus lift when the diagnostic imaging indicates it is needed."
       },
       "three": {
-        "title": "Plan and pricing",
-        "description": "A written plan with every option and its cost, staged so you can start where it makes sense for you."
+        "title": "Placement and healing",
+        "description": "Implant placement under local anaesthesia, followed by the healing and osseointegration period. Pain management follows the evidence from Dr. Meta's own published trial."
       },
       "four": {
-        "title": "Treatment and follow-up",
-        "description": "Unhurried treatment, then a check-in call afterwards and a reminder when your next visit is due."
+        "title": "Prosthetic restoration",
+        "description": "Crown, bridge or implant-supported denture. A straightforward single-implant case runs roughly 3 to 6 months from placement to final restoration."
       }
     }
   },
   "testimonials": {
-    "eyebrow": "Patient reviews",
-    "title": "What patients say afterwards",
+    "eyebrow": "Reviews",
+    "title": "What patients say",
+    "lead": "Feedback from expatriates and local patients across implant, cosmetic and general dentistry.",
+    "attribution": "First names and last initials as shared by patients.",
     "items": [
       {
-        "quote": "I had avoided dentists for eleven years. Dr. Meta talked me through every single step before touching anything. I have now been back three times without dreading it.",
-        "name": "Carolina R.",
-        "role": "Implant and crown patient"
+        "quote": "Dr. Isaac was welcoming, reassuring and professional. It was a relief to access dental care without searching around as a non-Spanish-speaking tourist, and I was grateful for a same-day appointment.",
+        "name": "Sarina C.",
+        "role": "Tourist patient"
       },
       {
-        "quote": "He showed me the 3D scan and explained why the cheaper option would fail in two years. Nobody had ever given me the reasoning before. I went with his plan and it was worth it.",
-        "name": "Daniel M.",
-        "role": "Full mouth restoration"
+        "quote": "Two other dentists in Palermo proposed drastic action right away. I'm glad I sought a third opinion — Dr. Meta was caring and gentle, and took the time to explain everything clearly and calmly. I felt fully informed before making any decision.",
+        "name": "Albert W. D.",
+        "role": "Second opinion"
       },
       {
-        "quote": "My daughter is thirteen and terrified of needles. She came out asking when the next appointment was. That alone tells you everything.",
-        "name": "Sofía L.",
-        "role": "Parent of orthodontic patient"
+        "quote": "One of my teeth cracked during vacation. A hospital ER said it needed to be removed but wouldn't do it. Dr. Meta took my case seriously, examined it carefully, and restored the tooth instead of removing it.",
+        "name": "Elena N. E.",
+        "role": "Dental emergency"
       },
       {
-        "quote": "Cracked a molar on a Sunday. Messaged the WhatsApp number and had an appointment Monday at eight. Fixed in one session, no drama.",
-        "name": "Martín G.",
-        "role": "Emergency patient"
+        "quote": "A dental emergency while traveling — he diagnosed an infection by X-ray and started the root canal I needed the same visit, explaining each step. He followed up afterward and even scheduled an extra visit during his lunch break before my trip ended.",
+        "name": "Lorena S. F.",
+        "role": "Root canal"
+      },
+      {
+        "quote": "Grateful for how he treated my dental emergency while traveling abroad. The implant was precisely placed and my healing was complete within a few days, with a follow-up call to check how I was doing.",
+        "name": "Tammy",
+        "role": "Dental implants"
+      },
+      {
+        "quote": "Very good professional, gentle throughout treatment and very kind. I was extremely satisfied with the work and recommend him without any doubt.",
+        "name": "Nora B.",
+        "role": "General dentistry"
       }
     ]
   },
   "faq": {
-    "eyebrow": "Questions",
-    "title": "Things people ask before booking",
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "lead": "Real questions international and local patients ask before their first visit.",
     "items": [
       {
-        "question": "Will it hurt?",
-        "answer": "Almost certainly less than you expect. We use modern local anaesthetic technique, work at an unhurried pace, and you have a hand signal to stop us at any moment. If you are anxious, tell us when you book and we will plan a longer, gentler first visit."
+        "question": "Do you speak English fluently, not just basic phrases?",
+        "answer": "Yes. Dr. Meta spent three years as a graduate researcher in Columbus, Ohio, and has treated English-speaking expatriates since 2007 — consultations and treatment planning happen in fluent, clinical English."
       },
       {
-        "question": "How much does a first visit cost?",
-        "answer": "The full assessment — exam, digital scan and photos — is a fixed fee quoted to you when you book, with no add-ons. You leave with a written plan and prices, and there is no obligation to start treatment."
+        "question": "Where exactly is the practice located?",
+        "answer": "The office is at Av. R. Scalabrini Ortiz 2089, 8th floor, Palermo, Buenos Aires (CABA), a central and easily accessible neighbourhood. Directions are in the contact section below."
       },
       {
-        "question": "Do you accept insurance?",
-        "answer": "We work with most major Argentine health plans and can issue documentation for reimbursement claims. Send us your plan details on WhatsApp and we will confirm your coverage before you come in."
+        "question": "Can I book an appointment if I'm only in Buenos Aires for a few days?",
+        "answer": "Yes. Contact the office by email or WhatsApp with your dates and the office will do its best to accommodate short-notice and traveller appointments, including urgent care."
       },
       {
-        "question": "How quickly can I be seen?",
-        "answer": "Routine appointments are usually available the same week. We also hold emergency slots open every day, so urgent problems are normally seen within 24 hours."
+        "question": "Do you work directly with international insurance?",
+        "answer": "Yes, with direct coordination for several major expatriate and international insurance providers. For other insurers, the office provides detailed documentation for out-of-network reimbursement."
       },
       {
-        "question": "What languages are spoken at the practice?",
-        "answer": "Dr. Meta and his team consult in English, Spanish and Hebrew, so you can discuss your treatment in the language you are most comfortable with."
+        "question": "Is treatment in Buenos Aires significantly less expensive than in the U.S. or Europe?",
+        "answer": "Costs are generally lower than in the U.S. or Western Europe for comparable implant and cosmetic work, though pricing depends on the specific treatment plan — ask for a written estimate after your diagnostic consultation."
       },
       {
-        "question": "Can I bring someone with me?",
-        "answer": "Always. A partner, friend or parent is welcome in the room for the whole appointment, and we encourage it if you are nervous."
+        "question": "How is implant treatment planned?",
+        "answer": "With a diagnostic consultation and, in most cases, a CBCT scan to evaluate bone volume and density before any surgical step is planned."
+      },
+      {
+        "question": "What is Dr. Meta's background specific to implants?",
+        "answer": "An MS in Oral Biology from Ohio State University with a thesis on bone density and mandibular structure, five related peer-reviewed publications, and a 2017 randomized controlled trial on pain management after implant placement, published in Implant Dentistry. He also taught for more than 10 years in the Oral Implantology department at USAL/AOA and in the Department of Periodontology."
+      },
+      {
+        "question": "Can I see what my smile will look like before committing to veneers?",
+        "answer": "Yes, through a digital mock-up and proportion analysis before any irreversible tooth preparation."
+      },
+      {
+        "question": "Are veneers permanent?",
+        "answer": "Veneers require some enamel removal and are considered a long-term, not fully reversible, treatment. Dr. Meta will discuss durability and alternatives during your consultation."
       }
-    ]
+    ],
+    "moreTitle": "Didn't find your question here?",
+    "moreCta": "Contact the office"
   },
   "contact": {
-    "eyebrow": "Get in touch",
-    "title": "Book your visit",
-    "lead": "WhatsApp is the fastest way to reach us — messages are usually answered within a couple of hours during opening times.",
+    "eyebrow": "Contact",
+    "title": "Get in touch",
+    "lead": "Email or WhatsApp are the fastest ways to reach the office. Consultations are available in English and Spanish.",
     "whatsapp": {
-      "label": "WhatsApp",
-      "cta": "Message us on WhatsApp",
+      "label": "Phone / WhatsApp",
+      "cta": "Message the office on WhatsApp",
       "note": "Fastest reply",
-      "prefill": "Hello! I would like to book a dental appointment with Dr. Meta."
+      "prefill": "Hello Dr. Meta, I would like to request a consultation."
     },
-    "phone": { "label": "Phone" },
+    "phone": { "label": "Phone / WhatsApp" },
     "email": { "label": "Email" },
-    "address": { "label": "Practice" },
-    "directions": "Get directions",
+    "address": { "label": "Location" },
+    "directions": "View on Google Maps",
     "hours": {
-      "label": "Opening hours",
-      "weekdays": "Monday to Friday",
-      "weekdaysValue": "9:00 - 19:00",
-      "saturday": "Saturday",
-      "saturdayValue": "9:00 - 13:00",
-      "sunday": "Sunday",
-      "sundayValue": "Emergencies only"
+      "label": "Hours",
+      "value": "By appointment, Monday to Friday"
     },
     "form": {
-      "title": "Or send a message",
-      "name": "Your name",
-      "namePlaceholder": "Ana Pérez",
+      "title": "Send a message",
+      "intro": "Prefer email? Write directly to the address above, or use WhatsApp for the fastest response.",
+      "name": "Full name",
+      "namePlaceholder": "Your name",
       "email": "Email address",
-      "emailPlaceholder": "ana.perez{'@'}example.com",
+      "emailPlaceholder": "you{'@'}example.com",
       "reason": "What can we help with?",
       "reasonPlaceholder": "Choose an option",
       "reasonOptions": {
-        "checkup": "Routine check-up and cleaning",
-        "cosmetic": "Cosmetic treatment",
-        "implants": "Implants",
-        "orthodontics": "Orthodontics",
-        "emergency": "Something urgent",
+        "implants": "Dental implants",
+        "cosmetic": "Cosmetic dentistry",
+        "rehabilitation": "Oral rehabilitation",
+        "secondOpinion": "Second opinion",
+        "urgent": "Something urgent",
         "other": "Something else"
       },
       "message": "Message",
-      "messagePlaceholder": "Tell us briefly what is going on and when you are usually free.",
-      "submit": "Send message",
-      "sending": "Sending...",
-      "success": "Thank you. Your message has been sent — we will reply within one working day.",
-      "demoNotice": "Demo form: no data is transmitted or stored.",
+      "messagePlaceholder": "Tell us briefly what you need, and your dates if you are travelling.",
+      "submit": "Send via WhatsApp",
+      "sending": "Opening WhatsApp...",
+      "success": "WhatsApp should now be open with your message ready to send.",
+      "demoNotice": "This form opens WhatsApp with your message prefilled. Nothing is stored on this site.",
       "errors": {
         "name": "Please enter your name.",
         "email": "Please enter a valid email address.",
-        "reason": "Please choose a reason for your visit.",
+        "reason": "Please choose a reason for your enquiry.",
         "message": "Please tell us briefly what you need."
       },
       "summaryTitle": "Please fix the following before sending:"
     }
   },
   "footer": {
-    "tagline": "Gentle, modern dentistry in the heart of Buenos Aires.",
-    "navTitle": "Explore",
+    "tagline": "Private practice in Palermo, Buenos Aires. Dental implants, oral rehabilitation and cosmetic dentistry.",
+    "navTitle": "Sections",
     "contactTitle": "Contact",
-    "legalTitle": "Legal",
-    "privacy": "Privacy policy",
-    "terms": "Terms of service",
-    "accessibility": "Accessibility statement",
-    "rights": "All rights reserved.",
-    "licence": "Licence no. 12345 — Argentine Dental Association"
+    "rights": "All rights reserved."
   }
 }
